@@ -1,0 +1,41 @@
+.button-primary {
+  align-items: center;
+  background-color: var(--aqua-forest);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 48px;
+  left: 258px;
+  padding: 16px 32px;
+  position: absolute;
+  top: 261px;
+  width: 118px;
+}
+
+.i-love-it {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -2.00px;
+  margin-left: -8.50px;
+  margin-right: -8.50px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.button-primary.button-primary-1 {
+  background-color: #865db0;
+  height: 44px;
+  left: 15px;
+  top: 265px;
+  width: 115px;
+}
+
+.button-primary.button-primary-1 .i-love-it {
+  margin-bottom: -6.00px;
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+}
+

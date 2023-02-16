@@ -114,7 +114,7 @@ const Group5 = styled.div`
 const Text8 = styled.div`
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text7 = styled.div`
@@ -122,14 +122,14 @@ const Text7 = styled.div`
   margin: 2px 0px 0px 0px;
   color: #bdbdbd;
   font-size: 14px;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
 const Paragraph2 = styled.div`
   width: 97.11%;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Feed = styled.div`
@@ -158,13 +158,13 @@ const Text11 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Feed = styled.div`
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -173,7 +173,7 @@ const Text12 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -193,7 +193,7 @@ const Text10 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text2 = styled.div`
@@ -201,7 +201,7 @@ const Text2 = styled.div`
   margin: 0px 0px 8px 4px;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Group = styled.div`
@@ -226,14 +226,14 @@ const Header = styled.div`
   margin: 0px 182px 31px 0px;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text9 = styled.div`
   margin: 2px 0px 31px 0px;
   color: #bdbdbd;
   font-size: 14px;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -242,6 +242,6 @@ const Text1 = styled.div`
   margin: 0px 0px 0px 1px;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;

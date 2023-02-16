@@ -60,7 +60,7 @@ const Text1 = styled.div`
   margin: 0px 101px 2px 0px;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -105,14 +105,14 @@ const Text3 = styled.div`
   align-self: flex-start;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text2 = styled.div`
   align-self: flex-start;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
@@ -141,7 +141,7 @@ const ILoveIt = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -151,7 +151,7 @@ const Paragraph1 = styled.div`
   color: #666666;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Paragraph = styled.div`
@@ -161,7 +161,7 @@ const Paragraph = styled.div`
   color: #666666;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ButtonPrimary1 = styled.button`
@@ -189,7 +189,7 @@ const ILoveIt1 = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;

@@ -148,7 +148,7 @@ const Settings = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text1 = styled.div`
@@ -157,7 +157,7 @@ const Text1 = styled.div`
   color: #ffffff;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -167,7 +167,7 @@ const Logout = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -197,7 +197,7 @@ const SignUp = styled.div`
   align-self: center;
   color: #ffffff;
   font-size: 32px;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -247,7 +247,7 @@ const ClickMe = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -256,7 +256,7 @@ const Text2 = styled.div`
   margin: 0px 74px 8px 0px;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -265,7 +265,7 @@ const Text3 = styled.div`
   margin: 0px 110px 0px 0px;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -300,7 +300,7 @@ const Text4 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -321,7 +321,7 @@ const Text5 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -331,7 +331,7 @@ const Photos = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -375,7 +375,7 @@ const Header = styled.div`
   align-self: flex-start;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text6 = styled.div`
@@ -383,7 +383,7 @@ const Text6 = styled.div`
   margin: 2px 0px 0px 0px;
   color: #bdbdbd;
   font-size: 14px;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -391,7 +391,7 @@ const Paragraph = styled.div`
   width: 97.11%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const DividerLine = styled.div`
@@ -439,7 +439,7 @@ const Header1 = styled.div`
   margin: 0px 0px 42px 0px;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Paragraph1 = styled.div`
@@ -449,7 +449,7 @@ const Paragraph1 = styled.div`
   top: 27px;
   position: absolute;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ButtonPrimary1 = styled.button`
@@ -479,7 +479,7 @@ const ClickMe1 = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -489,7 +489,7 @@ const Text7 = styled.div`
   margin: 2px 0px 42px 0px;
   color: #bdbdbd;
   font-size: 14px;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -543,7 +543,7 @@ const Text8 = styled.div`
   align-self: flex-start;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text9 = styled.div`
@@ -551,7 +551,7 @@ const Text9 = styled.div`
   margin: 2px 0px 0px 0px;
   color: #bdbdbd;
   font-size: 14px;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -559,7 +559,7 @@ const Paragraph2 = styled.div`
   width: 97.11%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const DividerLine2 = styled.div`
@@ -612,7 +612,7 @@ const Text10 = styled.div`
   align-self: flex-start;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text11 = styled.div`
@@ -620,7 +620,7 @@ const Text11 = styled.div`
   margin: 2px 0px 0px 0px;
   color: #bdbdbd;
   font-size: 14px;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -628,7 +628,7 @@ const Paragraph3 = styled.div`
   width: 97.11%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const DividerLine3 = styled.div`

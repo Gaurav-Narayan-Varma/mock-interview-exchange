@@ -67,14 +67,14 @@ const Text2 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text3 = styled.div`
   align-self: flex-start;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -84,7 +84,7 @@ const Filter = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -104,7 +104,7 @@ const Paragraph3 = styled.div`
   height: 100%;
   align-self: center;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Element2 = styled.div`
@@ -123,7 +123,7 @@ const Paragraph1 = styled.div`
   align-self: center;
   color: #ffffff;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Element1 = styled.div`
@@ -142,7 +142,7 @@ const Paragraph = styled.div`
   align-self: center;
   color: #ffffff;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const BG2 = styled.div`
@@ -161,7 +161,7 @@ const Paragraph2 = styled.div`
   height: 100%;
   align-self: center;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const BG = styled.div`
@@ -182,7 +182,7 @@ const Text1 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Ellipse = styled.div`

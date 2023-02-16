@@ -1,8 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import ReactDOM from 'react-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Outlet
+} from "react-router-dom";
+
 import "./global.css";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+
 
 import {AlreadyScheduled1} from "./screens/AlreadyScheduled1"
 import {BG1} from "./screens/BG1"
@@ -27,46 +34,77 @@ import {Tip1} from "./screens/Tip1"
 import {WelcomeToMIE1} from "./screens/WelcomeToMIE1"
 
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          {/* <Route index element={<Home />} /> */}
-          <Route path="Calendly" element={<Calendly1 />} /> 
-          <Route path="Calendar" element={<Calendar1 />} />
-          <Route path="ProfilePosts" element={<ProfilePosts1 />} />
-          <Route path="InterviewConfirmed" element={<InterviewConfirmed1 />} /> 
-          {/* 
-          
-          <Route path="" element={< />} />
-          <Route path="" element={< />} />
-          <Route path="" element={< />} />
-          <Route path="" element={< />} />
-          <Route path="" element={< />} /> */}
-          {/* <Route path="*" element={<NoMatch />} /> */}
+  <BrowserRouter>
+   <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="AlreadyScheduled1" element={<AlreadyScheduled1 />} /> 
+        <Route path="BG1" element={<BG1 />} /> 
+        <Route path="CalendarDrawer1" element={<CalendarDrawer1 />} /> 
+        <Route path="Calendar1" element={<Calendar1 />} /> 
+        <Route path="Calendly1" element={<Calendly1 />} /> 
+        <Route path="EditProfilePosts1" element={<EditProfilePosts1 />} /> 
+        <Route path="Feed1" element={<Feed1 />} /> 
+        <Route path="Filter1" element={<Filter1 />} /> 
+        <Route path="InterviewConfirmed1" element={<InterviewConfirmed1 />} /> 
+        <Route path="JobSeekerProfilePosts1" element={<JobSeekerProfilePosts1 />} /> 
+        <Route path="LogIn1" element={<LogIn1 />} /> 
+        <Route path="Market1" element={<Market1 />} /> 
+        <Route path="Messages1" element={<Messages1 />} /> 
+        <Route path="NotScheduled1" element={<NotScheduled1 />} /> 
+        <Route path="ProfilePosts1" element={<ProfilePosts1 />} /> 
+        <Route path="Rating1" element={<Rating1 />} /> 
+        <Route path="SearchMessages1" element={<SearchMessages1 />} /> 
+        <Route path="Search1" element={<Search1 />} /> 
+        <Route path="SignUp1" element={<SignUp1 />} /> 
+        <Route path="Tip1" element={<Tip1 />} /> 
+        <Route path="WelcomeToMIE1" element={<WelcomeToMIE1 />} /> 
 
-          
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      </Route>
+   </Routes>
+</BrowserRouter>
 );
-
 
 
 function Layout() {
   return (
     <div>
       <nav>
-            <Link to="/">Home</Link>
-            <Link to="/Calendly">Calendly</Link>
-           
-            <br />
-             <Link to="/BG1">BG1</Link>
-            <Link to="/Calendar">Calendar</Link>
-            <Link to="/ProfilePosts">ProfilePosts1</Link>
+       
+<Link to="AlreadyScheduled1">AlreadyScheduled1</Link>
+        <Link to="BG1">BG1</Link>
+        <Link to="CalendarDrawer1">CalendarDrawer1</Link>
+        <Link to="Calendar1">Calendar1</Link>
+        <Link to="Calendly1">Calendly1</Link>
+        <br />
+        <Link to="EditProfilePosts1">EditProfilePosts1</Link>
+        <Link to="Feed1">Feed1</Link>
+        <Link to="Filter1">Filter1</Link>
+        <Link to="InterviewConfirmed1">InterviewConfirmed1</Link>
+        
+        <br />
+        <Link to="JobSeekerProfilePosts1">JobSeekerProfilePosts1</Link>
+        <Link to="LogIn1">LogIn1</Link>
+        <Link to="Market1">Market1</Link>
+        <Link to="Messages1">Messages1</Link>
+        
+        <br />
+        <Link to="NotScheduled1">NotScheduled1</Link>
+        <Link to="ProfilePosts1">ProfilePosts1</Link>
+        <Link to="Rating1">Rating1</Link>
+        <Link to="SearchMessages1">SearchMessages1</Link>
+        <br /><Link to="Search1">Search1</Link>
 
-            <br />
-            
+        
+        <Link to="SignUp1">SignUp1</Link>
+        <Link to="Tip1">Tip1</Link>
+        <Link to="WelcomeToMIE1">WelcomeToMIE1</Link>
+
+
+         
+        {/* Outlet does the rendering output */}
+         <Outlet />
          
       </nav>
     </div>

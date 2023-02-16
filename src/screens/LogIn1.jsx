@@ -159,7 +159,7 @@ const Text6 = styled.div`
   margin: 0px 142px 13px 0px;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -180,7 +180,7 @@ const Text5 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const BG1 = styled.div`
@@ -201,7 +201,7 @@ const Text3 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text4 = styled.div`
@@ -210,7 +210,7 @@ const Text4 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -240,7 +240,7 @@ const Text2 = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -250,7 +250,7 @@ const Text1 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const SilverRectangle = styled.div`

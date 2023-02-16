@@ -124,7 +124,7 @@ const Back = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text6 = styled.div`
@@ -132,7 +132,7 @@ const Text6 = styled.div`
   margin: 0px 59px 0px 0px;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -142,7 +142,7 @@ const Text7 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   text-align: right;
   box-sizing: border-box;
 `;
@@ -163,7 +163,7 @@ const Text5 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text4 = styled.div`
@@ -171,7 +171,7 @@ const Text4 = styled.div`
   margin: 0px 0px 2.78px 9px;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Group = styled.div`
@@ -233,7 +233,7 @@ const ItemNameGoesHere = styled.div`
   width: 100%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Group8 = styled.div`
@@ -281,7 +281,7 @@ const Starting = styled.div`
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
-  font-family: Inter;
+
   text-align: center;
   box-sizing: border-box;
 `;
@@ -290,7 +290,7 @@ const ItemNameGoesHere1 = styled.div`
   align-self: flex-start;
   margin: 0px 0px 19px 0px;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ItemNameGoesHere2 = styled.div`
@@ -298,7 +298,7 @@ const ItemNameGoesHere2 = styled.div`
   align-self: flex-start;
   margin: 0px 0px 36px 0px;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Group2 = styled.div`
@@ -318,7 +318,7 @@ const Text3 = styled.div`
   position: absolute;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text2 = styled.div`
@@ -326,7 +326,7 @@ const Text2 = styled.div`
   align-self: flex-start;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Group3 = styled.div`
@@ -377,21 +377,21 @@ const ItemNameGoesHere3 = styled.div`
   width: 35.03%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ItemNameGoesHere4 = styled.div`
   width: 35.03%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ItemNameGoesHere5 = styled.div`
   width: 35.03%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Text1 = styled.div`
@@ -399,7 +399,7 @@ const Text1 = styled.div`
   margin: 0px 0px 7.7px 9px;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const Group5 = styled.div`
@@ -449,20 +449,20 @@ const ItemNameGoesHere6 = styled.div`
   width: 35.03%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ItemNameGoesHere7 = styled.div`
   width: 35.03%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;
 const ItemNameGoesHere8 = styled.div`
   width: 35.03%;
   align-self: flex-start;
   font-size: 14px;
-  font-family: Inter;
+
   box-sizing: border-box;
 `;

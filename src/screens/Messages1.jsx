@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export const MessagesRootRoot1 = ({}) => {
+export const Messages1 = ({}) => {
   return (
-    <MessagesRootRoot>
+    <Messages>
       <PageHeader>
         <Text2>Back</Text2>
         <Text3>Messages</Text3>
@@ -37,11 +37,11 @@ export const MessagesRootRoot1 = ({}) => {
           <Image1 src={`https://file.rendit.io/n/6AttJw3GhjmeSmQsreX2.svg`} />
         </Ellipse>
       </BG>
-    </MessagesRootRoot>
+    </Messages>
   );
 };
 
-const MessagesRootRoot = styled.div`
+const Messages = styled.div`
   gap: 16px;
   display: flex;
   flex-direction: column;

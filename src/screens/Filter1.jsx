@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export const BGRootRoot1 = ({}) => {
+export const Filter1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
   return (
-    <BGRootRoot>
+    <BG>
       <Handle />
       <ButtonPrimary onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         <ClickMe>Filter</ClickMe>
@@ -28,11 +28,11 @@ export const BGRootRoot1 = ({}) => {
         <Radio4 src={`https://file.rendit.io/n/hBEbPRM6j8I5MbSZyjMr.svg`} />
       </Group2>
       <Divider2 />
-    </BGRootRoot>
+    </BG>
   );
 };
 
-const BGRootRoot = styled.div`
+const BG = styled.div`
   gap: 13px;
   display: flex;
   flex-direction: column;

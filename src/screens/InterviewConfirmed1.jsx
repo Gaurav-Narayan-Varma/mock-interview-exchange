@@ -10,7 +10,10 @@ export const InterviewConfirmed1 = ({}) => {
       <BG>
         <Text1>Interview Confirmed!</Text1>
         <Paragraph>
-          Please check your calendar and follow up on the interview.
+          Consequat velit qui adipisicing sunt do reprehenderit ad laborum
+          tempor ullamco exercitation. Ullamco tempor adipisicing et voluptate
+          duis sit esse aliqua esse ex dolore esse. Consequat velit qui
+          adipisicing sunt.
         </Paragraph>
         <ButtonPrimary
           onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
@@ -41,14 +44,14 @@ const BG = styled.div`
   padding: 32px 16px;
   box-sizing: border-box;
   background-size: cover;
-  background-image: url("https://file.rendit.io/n/f5eK5PGLj4K0zGMzVNPz.svg");
+  background-image: url("https://file.rendit.io/n/bvafCvzN9ss8ZridwdDS.svg");
 `;
 const Text1 = styled.div`
   align-self: flex-end;
   margin: 0px 2px 0px 0px;
   font-size: 30px;
   font-weight: 600;
-  
+  font-family: Inter;
   text-align: center;
   box-sizing: border-box;
 `;
@@ -58,7 +61,7 @@ const Paragraph = styled.div`
   color: #666666;
   font-size: 16px;
   font-weight: 500;
-  
+  font-family: Inter;
   text-align: center;
   box-sizing: border-box;
 `;
@@ -86,7 +89,7 @@ const ClickMe = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  
+  font-family: Inter;
   text-align: center;
   box-sizing: border-box;
 `;
@@ -96,7 +99,7 @@ const Text2 = styled.div`
   color: #5db074;
   font-size: 16px;
   font-weight: 600;
-  
+  font-family: Inter;
   text-align: center;
   box-sizing: border-box;
 `;

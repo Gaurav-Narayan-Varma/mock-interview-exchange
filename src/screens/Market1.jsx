@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const MarketRootRoot1 = ({}) => {
+export const Market1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
@@ -9,7 +9,7 @@ export const MarketRootRoot1 = ({}) => {
     alert(`${name} was clicked`);
   };
   return (
-    <MarketRootRoot>
+    <Market>
       <PageHeader>
         <Back>My Profile (1)</Back>
         <Text6>Market</Text6>
@@ -94,11 +94,11 @@ export const MarketRootRoot1 = ({}) => {
           Goes Here
         </ItemNameGoesHere8>
       </Group6>
-    </MarketRootRoot>
+    </Market>
   );
 };
 
-const MarketRootRoot = styled.div`
+const Market = styled.div`
   gap: 2.22px;
   display: flex;
   flex-direction: column;

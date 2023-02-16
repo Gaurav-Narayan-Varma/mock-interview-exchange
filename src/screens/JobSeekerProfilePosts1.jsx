@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const ProfilePostsRootRoot1 = ({}) => {
+export const JobSeekerProfilePosts1 = ({}) => {
   const ButtonPrimary2Function = (e, name) => {
     alert(`${name} was clicked`);
   };
@@ -12,7 +12,7 @@ export const ProfilePostsRootRoot1 = ({}) => {
     alert(`${name} was clicked`);
   };
   return (
-    <ProfilePostsRootRoot>
+    <ProfilePosts>
       <Group>
         <FernRectangle>
           <Settings>Edit</Settings>
@@ -103,11 +103,11 @@ export const ProfilePostsRootRoot1 = ({}) => {
         </Group12>
       </Group4>
       <DividerLine3 />
-    </ProfilePostsRootRoot>
+    </ProfilePosts>
   );
 };
 
-const ProfilePostsRootRoot = styled.div`
+const ProfilePosts = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

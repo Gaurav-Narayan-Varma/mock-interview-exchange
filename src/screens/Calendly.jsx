@@ -5,12 +5,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 
-
-
-
-
-
-export default function Calendly1  ({})  {
+export const Calendly1 = ({}) => {
   const navigate = useNavigate();
 
   const ButtonPrimaryFunction = (e, name) => {

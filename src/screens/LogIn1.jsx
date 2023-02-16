@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const LogInRootRoot1 = ({}) => {
+export const LogIn1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
@@ -9,7 +9,7 @@ export const LogInRootRoot1 = ({}) => {
     alert(`${name} was clicked`);
   };
   return (
-    <LogInRootRoot>
+    <LogIn>
       <Text6>Log In</Text6>
       <BG>
         <Text5>Email</Text5>
@@ -140,11 +140,11 @@ export const LogInRootRoot1 = ({}) => {
           <HomeIndicator />
         </Background>
       </SilverRectangle>
-    </LogInRootRoot>
+    </LogIn>
   );
 };
 
-const LogInRootRoot = styled.div`
+const LogIn = styled.div`
   gap: 16px;
   display: flex;
   flex-direction: column;

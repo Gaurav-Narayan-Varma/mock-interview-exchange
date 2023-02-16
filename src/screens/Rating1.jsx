@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export const RatingRootRoot1 = ({}) => {
+export const Rating1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
   return (
-    <RatingRootRoot>
+    <Rating>
       <BG>
         <Text2>Rate</Text2>
         <Group>
@@ -29,11 +29,11 @@ export const RatingRootRoot1 = ({}) => {
           <ILoveIt>Done!</ILoveIt>
         </ButtonPrimary>
       </BG>
-    </RatingRootRoot>
+    </Rating>
   );
 };
 
-const RatingRootRoot = styled.div`
+const Rating = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

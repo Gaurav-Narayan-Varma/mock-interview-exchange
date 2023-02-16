@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export const BGRootRootRoot1 = ({}) => {
+export const BG1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
   return (
-    <BGRootRootRoot>
+    <BG>
       <Handle />
       <Text1>Interviews Joe Job Seeker</Text1>
       <Group>
@@ -22,11 +22,11 @@ export const BGRootRootRoot1 = ({}) => {
       <ButtonPrimary onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         <ClickMe>Close</ClickMe>
       </ButtonPrimary>
-    </BGRootRootRoot>
+    </BG>
   );
 };
 
-const BGRootRootRoot = styled.div`
+const BG = styled.div`
   gap: 6px;
   display: flex;
   flex-direction: column;

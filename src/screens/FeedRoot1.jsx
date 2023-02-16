@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export const FeedRootRootRoot1 = ({}) => {
+export const Feed1 = ({}) => {
   return (
-    <FeedRootRootRoot>
+    <Feed>
       <PageHeader>
         <Text11>Back</Text11>
         <Feed>Your Mocks</Feed>
@@ -62,7 +62,7 @@ export const FeedRootRootRoot1 = ({}) => {
       </Group1>
       <DividerLine />
       <Text1>Past</Text1>
-    </FeedRootRootRoot>
+    </Feed>
   );
 };
 
@@ -132,7 +132,7 @@ const Paragraph2 = styled.div`
   font-family: Inter;
   box-sizing: border-box;
 `;
-const FeedRootRootRoot = styled.div`
+const Feed = styled.div`
   gap: 15px;
   display: flex;
   flex-direction: column;

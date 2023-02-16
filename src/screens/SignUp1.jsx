@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const SignUpRootRoot1 = ({}) => {
+export const SignUp1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
@@ -9,7 +9,7 @@ export const SignUpRootRoot1 = ({}) => {
     alert(`${name} was clicked`);
   };
   return (
-    <SignUpRootRoot>
+    <SignUp>
       <Group>
         <Text7>Sign Up</Text7>
         <Text8>Login</Text8>
@@ -155,11 +155,11 @@ export const SignUpRootRoot1 = ({}) => {
           <HomeIndicator />
         </Background>
       </SilverRectangle>
-    </SignUpRootRoot>
+    </SignUp>
   );
 };
 
-const SignUpRootRoot = styled.div`
+const SignUp = styled.div`
   position: relative;
   gap: 2px;
   display: flex;

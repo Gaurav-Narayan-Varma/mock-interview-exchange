@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 
-function  BG1 ({}) {
+export const CalendarDrawer1 = ({}) => {
 
   const navigate = useNavigate();
 
@@ -60,7 +60,6 @@ function  BG1 ({}) {
   );
 };
 
-export default  BG1;
 
 const BG = styled.div`
   gap: 6px;

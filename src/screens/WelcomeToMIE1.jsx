@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export const WelcomeToMIERootRootRoot1 = ({}) => {
+export const WelcomeToMIE1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
   return (
-    <WelcomeToMIERootRootRoot>
+    <WelcomeToMIE>
       <BG>
         <Text2>Welcome to Mock IE</Text2>
         <Text3>Starting doing interview today!</Text3>
@@ -17,11 +17,11 @@ export const WelcomeToMIERootRootRoot1 = ({}) => {
         </ButtonPrimary>
         <Text1>Login</Text1>
       </BG>
-    </WelcomeToMIERootRootRoot>
+    </WelcomeToMIE>
   );
 };
 
-const WelcomeToMIERootRootRoot = styled.div`
+const WelcomeToMIE = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

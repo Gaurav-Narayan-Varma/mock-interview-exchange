@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export const CalendarRootRoot1 = ({}) => {
+export const Calendar1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
   return (
-    <CalendarRootRoot>
+    <Calendar>
       <Background>
         <Text42>Mo</Text42>
         <Text43>Tu</Text43>
@@ -90,11 +90,11 @@ export const CalendarRootRoot1 = ({}) => {
       <ButtonPrimary onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         <ILoveIt>Ready to learn!</ILoveIt>
       </ButtonPrimary>
-    </CalendarRootRoot>
+    </Calendar>
   );
 };
 
-const CalendarRootRoot = styled.div`
+const Calendar = styled.div`
   gap: 15px;
   display: flex;
   flex-direction: column;

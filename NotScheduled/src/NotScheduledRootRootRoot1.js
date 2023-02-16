@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const NotScheduledRootRootRoot1 = ({}) => {
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    alert('Go to Messages');
   };
   const ButtonPrimary1Function = (e, name) => {
     alert(`${name} was clicked`);
@@ -24,7 +24,7 @@ export const NotScheduledRootRootRoot1 = ({}) => {
         </ButtonPrimary>
       </FlexColumn>
       <Paragraph>
-        Worked at Google for a decade ...
+        Worked at Google / Microsoft
         <br />
         <br />
         Can do technical interviews

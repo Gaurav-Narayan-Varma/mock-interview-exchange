@@ -1,0 +1,316 @@
+.calendarRootRootRoot {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 0px 101px 0px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.group {
+  width: 87.2%;
+  gap: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: flex-end;
+  margin: -2px 14.7px 0.33px 0px;
+  box-sizing: border-box;
+}
+.element1 {
+  min-width: 0px;
+  min-height: 0px;
+  margin: 19.2px 15.1px 0.41px 0px;
+  box-sizing: border-box;
+}
+.group5 {
+  width: 72.28%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-start;
+  align-items: flex-end;
+  margin: 0px 4.03px 0.33px 0px;
+  padding: 19.7px 0px 0px 0px;
+  box-sizing: border-box;
+}
+.notch {
+  width: 219px;
+  min-width: 0px;
+  height: 30px;
+  min-height: 0px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.wifi {
+  min-width: 0px;
+  min-height: 0px;
+  margin: 19.3px 4.03px 0.37px 0px;
+  box-sizing: border-box;
+}
+.element2 {
+  width: 6.83%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 19.3px 0px 0px 0px;
+  padding: 2px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-image: url("https://file.rendit.io/n/q11fK1aCkH3HBAnEwZkf.svg");
+}
+.image1 {
+  min-width: 0px;
+  min-height: 0px;
+  box-sizing: border-box;
+}
+.combinedShape {
+  min-width: 0px;
+  min-height: 0px;
+  margin: 23px 0px 3.67px 0px;
+  box-sizing: border-box;
+}
+.background {
+  width: 100%;
+  gap: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: flex-end;
+  margin: 0px 0px 17px 0px;
+  padding: 16px 17px 16px 16px;
+  box-sizing: border-box;
+  background-color: #5db074;
+}
+.group6 {
+  width: 33.03%;
+  gap: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.text49 {
+  align-self: flex-end;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.group7 {
+  gap: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.text48 {
+  margin: 112px 0px 0px 0px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.calendarRow {
+  width: 90.13%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin: 0px 0px 25px 16px;
+  box-sizing: border-box;
+}
+.calendarRow1 {
+  width: 89.33%;
+  gap: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: flex-start;
+  margin: 0px 19px 16px 0px;
+  box-sizing: border-box;
+}
+.text34 {
+  margin: 0px 15px 0px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.text33 {
+  margin: 0px 14px 0px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.text32 {
+  margin: 0px 8px 0px 0px;
+  color: #5db074;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.group1 {
+  width: 90.4%;
+  gap: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0px 0px 17px 0px;
+  box-sizing: border-box;
+}
+.text27 {
+  margin: 9px 20px 8px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.text26 {
+  margin: 9px 19px 8px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.text25 {
+  margin: 9px 13px 8px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.group8 {
+  width: 21.64%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin: 0px 1px 0px 0px;
+  box-sizing: border-box;
+}
+.text23 {
+  width: 16px;
+  height: 17px;
+  left: 10px;
+  top: 9px;
+  position: absolute;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.text22 {
+  margin: 9px 11px 8px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.calendarRow2 {
+  width: 90.93%;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 0px 17px 0px;
+  box-sizing: border-box;
+}
+.text16 {
+  margin: 0px 1px 0px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.calendarRow3 {
+  width: 89.87%;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin: 0px 0px 17px 16px;
+  box-sizing: border-box;
+}
+.text12 {
+  margin: 0px 9px 0px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.text11 {
+  margin: 0px 3px 0px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.text8 {
+  margin: 0px 8px 0px 0px;
+  font-size: 14px;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}
+.divider2 {
+  width: 91.47%;
+  height: 1px;
+  flex-shrink: 0;
+  margin: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: #e7e7e7;
+  box-sizing: border-box;
+}
+.buttonPrimary {
+  width: 82.93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  margin: 0px 0px 0px 25px;
+  padding: 0px;
+  padding-top: 16px;
+  padding-right: 97.5px;
+  padding-bottom: 16px;
+  padding-left: 97.5px;
+  border-width: 0px;
+  border-radius: 100px;
+  box-sizing: content-box;
+  background-color: #5db074;
+  cursor: pointer;
+}
+.buttonPrimary:hover {
+  opacity: 70%;
+}
+.iLoveIt {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Inter;
+  text-align: center;
+  box-sizing: border-box;
+}

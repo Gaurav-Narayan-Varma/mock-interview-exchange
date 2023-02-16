@@ -5,3 +5,4 @@ dist-ssr
 *.local
 .vscode/
 .vite/
+yarn.lock

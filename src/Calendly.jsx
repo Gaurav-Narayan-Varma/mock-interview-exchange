@@ -1,16 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 
+
+import { useNavigate } from "react-router-dom";
+
+
+
+
+
+
+
 export default function Calendly1  ({})  {
+  const navigate = useNavigate();
+
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+     navigate("/InterviewConfirmed");
+
   };
+
+  
   return (
     <Calendly>
       <Group>
         <Element1 src={`https://file.rendit.io/n/RZcUyKOAQZzFS9w3o8MD.svg`} />
         <Group1>
-          <Notch src={`https://file.rendit.io/n/LEOQ7o9X5tbCEewSn4zt.svg`} />
           <MobileSignal
             src={`https://file.rendit.io/n/MBfa08GdJA86HsHZZho9.svg`}
           />

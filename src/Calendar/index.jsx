@@ -10,7 +10,6 @@ const  Calendar1 = ({}) => {
       <Group>
         <Element1 src={`https://file.rendit.io/n/iLbBC4OK0KIhZ005w78E.svg`} />
         <Group5>
-          <Notch src={`https://file.rendit.io/n/QUyOeKe9wk3rvIfj9nZh.svg`} />
           <MobileSignal
             src={`https://file.rendit.io/n/9GU9LbsiVpZkDm1I3YYN.svg`}
           />

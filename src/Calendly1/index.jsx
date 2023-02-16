@@ -163,7 +163,7 @@ const Text1 = styled.div`
   margin: 0px 0px 11px 0px;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
@@ -183,7 +183,7 @@ const Search = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
   box-sizing: border-box;
 `;
 const BG2 = styled.div`
@@ -203,7 +203,7 @@ const Search1 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
   box-sizing: border-box;
 `;
 const Group2 = styled.div`
@@ -221,7 +221,7 @@ const RadioOptionHere = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
   box-sizing: border-box;
 `;
 const Radio1 = styled.div`
@@ -267,7 +267,7 @@ const RadioOptionHere1 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
   box-sizing: border-box;
 `;
 const Radio3 = styled.img`
@@ -302,7 +302,7 @@ const RadioOptionHere2 = styled.div`
   color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
   box-sizing: border-box;
 `;
 const Radio4 = styled.img`
@@ -347,7 +347,7 @@ const ClickMe = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;

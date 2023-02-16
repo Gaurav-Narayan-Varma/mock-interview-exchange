@@ -88,7 +88,7 @@ const Text1 = styled.div`
   margin: 0px 14px 0px 0px;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
@@ -110,7 +110,7 @@ const Text2 = styled.div`
   color: #666666;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
@@ -123,7 +123,7 @@ const Text3 = styled.div`
   color: #666666;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
@@ -145,7 +145,7 @@ const Text4 = styled.div`
   align-self: center;
   font-size: 14px;
   font-weight: 700;
-  font-family: Inter;
+ 
   box-sizing: border-box;
 `;
 const Image1 = styled.img`
@@ -159,7 +159,7 @@ const Image1 = styled.img`
   box-sizing: border-box;
 `;
 const ButtonPrimary1 = styled.button`
-  width: 97.03%;
+  width: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -185,7 +185,7 @@ const ClickMe1 = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
@@ -205,12 +205,12 @@ const ClickMe2 = styled.div`
   align-self: center;
   color: #ffffff;
   font-size: 16px;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
 const ButtonPrimary3 = styled.button`
-  width: 97.03%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,12 +234,12 @@ const ClickMe3 = styled.div`
   align-self: center;
   color: #ffffff;
   font-size: 16px;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
 const ButtonPrimary4 = styled.button`
-  width: 97.03%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,12 +263,12 @@ const ClickMe4 = styled.div`
   align-self: center;
   color: #ffffff;
   font-size: 16px;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 97.03%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,7 +292,7 @@ const ClickMe = styled.div`
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+ 
   text-align: center;
   box-sizing: border-box;
 `;

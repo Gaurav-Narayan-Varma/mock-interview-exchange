@@ -15,7 +15,7 @@
   margin: 0px 101px 2px 0px;
   font-size: 30px;
   font-weight: 600;
-  font-family: Inter;
+ 
   text-align: center;
   white-space: nowrap;
 }
@@ -52,7 +52,7 @@
   position: absolute;
   font-size: 24px;
   font-weight: 500;
-  font-family: Inter;
+ 
 }
 .text3 {
   width: 343px;
@@ -62,7 +62,7 @@
   position: absolute;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+ 
 }
 .buttonPrimary {
   position: relative;
@@ -89,7 +89,7 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+ 
   text-align: center;
   white-space: nowrap;
 }
@@ -100,7 +100,7 @@
   color: #666666;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
 }
 .paragraph1 {
   width: 343px;
@@ -109,7 +109,7 @@
   color: #666666;
   font-size: 16px;
   font-weight: 500;
-  font-family: Inter;
+ 
 }
 .buttonPrimary1 {
   display: flex;
@@ -136,7 +136,7 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  font-family: Inter;
+ 
   text-align: center;
   white-space: nowrap;
 }

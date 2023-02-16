@@ -2,7 +2,7 @@ import * as React from "react";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 import Calendly1 from "./Calendly1"
-import BG1 from "./BG"
+import BG1 from "./CalendarDrawer"
 import Calendar1 from "./Calendar"
 
 

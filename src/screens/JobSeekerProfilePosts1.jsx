@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
 
 export const JobSeekerProfilePosts1 = ({}) => {
+  
+  const navigate = useNavigate();
   const ButtonPrimary2Function = (e, name) => {
     alert(`${name} was clicked`);
   };

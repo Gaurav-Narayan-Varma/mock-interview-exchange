@@ -1,13 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
 import { useNavigate } from "react-router-dom";
 
 
 export const CalendarDrawer1 = ({}) => {
-
   const navigate = useNavigate();
-
   
   const ButtonPrimary1Function = (e, name) => {      
       

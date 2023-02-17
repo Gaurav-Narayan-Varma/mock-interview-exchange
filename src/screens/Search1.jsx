@@ -1,19 +1,37 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
 
 export const Search1 = ({}) => {
+  
+  const navigate = useNavigate();
+
+  
+  const ButtonBack = (e, name) => {
+    navigate("/Market1");
+  };
+  const ButtonFilter = (e, name) => {
+    navigate("/Filter1");
+  };
+  const ButtonProfile = (e, name) => {
+    navigate("/NotScheduled1");
+  };
+
+
+  
   return (
     <Search>
       <PageHeader>
-        <Text3>Back</Text3>
+        <Text3 onClick={(e) => ButtonBack(e, "ButtonPrimary")}>Back</Text3>
         <Text2>Directory</Text2>
-        <Text1>Filter</Text1>
+        <Text1 onClick={(e) => ButtonFilter(e, "ButtonPrimary")}>Filter</Text1>
       </PageHeader>
       <BG>
         <Text4>Search</Text4>
       </BG>
       <Text5>Your mocks:</Text5>
-      <Group>
+      <Group onClick={(e) => ButtonProfile(e, "ButtonPrimary")}>
         <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4D03AQFjCosFi0uoOA/profile-displayphoto-shrink_400_400/0/1618882572479?e=1681948800&v=beta&t=s7Y6k96xzkX1KSJpxgva0uzjnQB3T3b97ACQnsZP9gk"></img></ContentBlock>
         <Group4>
           <Group5>
@@ -24,7 +42,7 @@ export const Search1 = ({}) => {
         </Group4>
       </Group>
       <DividerLine />
-      <Group1>
+      <Group1 onClick={(e) => ButtonProfile(e, "ButtonPrimary")}>
       <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4E03AQFbBv4KvvZLyQ/profile-displayphoto-shrink_400_400/0/1517740860047?e=1681948800&v=beta&t=7B3kfLl7L3DEGZsspk4rHzgAvwMt813GIH_jNPN1dQE"></img></ContentBlock>
         <Group4>
           <Group5>
@@ -35,7 +53,7 @@ export const Search1 = ({}) => {
         </Group4>
       </Group1>
       <DividerLine1 />
-      <Group2>
+      <Group2 onClick={(e) => ButtonProfile(e, "ButtonPrimary")}>
       <ContentBlock><img  width="50px" src="https://media.licdn.com/dms/image/D4D03AQGHVfas_1Gl1A/profile-displayphoto-shrink_400_400/0/1665579676179?e=1681948800&v=beta&t=sWVJsQp4PFTrWyWp1ajqBYwh6OilDzNwvEsMJnxCtYM"></img></ContentBlock>
         <Group4>
           <Group5>

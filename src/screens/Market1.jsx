@@ -1,6 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
+
 import { initializeApp } from 'firebase/app';
 import { getFirestore, query, where, doc, setDoc, getDocs, collection, addDoc } from "firebase/firestore";
 import 'firebase/firestore';
@@ -67,6 +70,10 @@ queryPPHSnapshot.forEach((doc) => {
 })
  
 export const Market1 = ({}) => {
+  
+  const navigate = useNavigate();
+
+
   const [myMocks, setMocks] = useState([])
   const [myNames, setNames] = useState([])
   const [myDates, setDates] = useState([])
@@ -146,6 +153,12 @@ export const Market1 = ({}) => {
   }, [combinedSnapshot])
   
 
+  const ButtonPrimaryFunction = (e, name) => {
+
+    navigate("/Search1");
+
+  };
+
   return (
     <Market>
       <PageHeader>
@@ -157,7 +170,7 @@ export const Market1 = ({}) => {
         <Text5>Search</Text5>
       </BG>
       <Text4>Your mocks</Text4>
-      <Group>
+      <Group  onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         {myMocks.length >= 3 ? myMocks : 'loading...'}
       </Group>
       <Group1>
@@ -165,8 +178,7 @@ export const Market1 = ({}) => {
           {myNames.length >= 3 ? myNames[0] : 'loading...'}
           {myDates.length >= 3 ? myDates[0] : 'loading...'}
           <Group8>
-            {/* onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")} */}
-            <ButtonPrimary>
+            <ButtonPrimary >
               Starting (Host)
             </ButtonPrimary>
           </Group8>

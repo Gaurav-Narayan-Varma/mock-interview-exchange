@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 export const Calendar1 = ({}) => {
+  const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
@@ -546,7 +548,7 @@ const Text7 = styled.div`
   box-sizing: border-box;
 `;
 const Group1 = styled.div`
-  width: auto;
+  width: 91.47%;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -578,7 +580,7 @@ const Text5 = styled.div`
   box-sizing: border-box;
 `;
 const Divider = styled.div`
-  width: auto;
+  width: 91.47%;
   height: 1px;
   flex-shrink: 0;
   align-self: center;
@@ -588,7 +590,7 @@ const Divider = styled.div`
   box-sizing: border-box;
 `;
 const Group2 = styled.div`
-  width: auto;
+  width: 91.47%;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -620,7 +622,7 @@ const Text3 = styled.div`
   box-sizing: border-box;
 `;
 const Divider1 = styled.div`
-  width: auto;
+  width: 91.47%;
   height: 1px;
   flex-shrink: 0;
   align-self: center;
@@ -630,7 +632,7 @@ const Divider1 = styled.div`
   box-sizing: border-box;
 `;
 const Group3 = styled.div`
-  width: auto;
+  width: 91.47%;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -662,7 +664,7 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const Divider2 = styled.div`
-  width: auto;
+  width: 91.47%;
   height: 1px;
   flex-shrink: 0;
   align-self: center;

@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 export const InterviewConfirmed1 = ({}) => {
+  
+  const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/Market1")
   };
   return (
     <InterviewConfirmed>
       <BG>
         <Text1>Interview Confirmed!</Text1>
         <Paragraph>
-          Consequat velit qui adipisicing sunt do reprehenderit ad laborum
-          tempor ullamco exercitation. Ullamco tempor adipisicing et voluptate
-          duis sit esse aliqua esse ex dolore esse. Consequat velit qui
-          adipisicing sunt.
+          Now just sit tight and prepare for the mock interview.
         </Paragraph>
         <ButtonPrimary
           onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
         >
           <ClickMe>Go to home</ClickMe>
         </ButtonPrimary>
-        <Text2>Message them!</Text2>
+        {/* <Text2>Message them!</Text2> */}
       </BG>
     </InterviewConfirmed>
   );

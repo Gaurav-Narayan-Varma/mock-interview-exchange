@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 export const Filter1 = ({}) => {
+  
+  const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
-  };
+      navigate("/Search1");
+    };
   return (
     <BG>
       <Handle />

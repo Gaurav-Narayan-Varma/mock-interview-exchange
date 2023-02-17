@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 export const BG1 = ({}) => {
+  const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
     alert(`${name} was clicked`);
   };

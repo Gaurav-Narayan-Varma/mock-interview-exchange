@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
 
 export const NotScheduled1 = ({}) => {
-  const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+  
+  const navigate = useNavigate();
+  const ButtonProfile = (e, name) => {
+    navigate("/ProfilePosts1")
   };
-  const ButtonPrimary1Function = (e, name) => {
-    alert(`${name} was clicked`);
+  const ButtonFindTime = (e, name) => {
+    navigate("/Calendly1")
   };
   return (
     <NotScheduled>
@@ -16,13 +20,13 @@ export const NotScheduled1 = ({}) => {
       </ImageBlock>
       <Group>
         <Group1>
-          <Text3>Victoria/Joe JS</Text3>
+          <Text3>Victoria Vee</Text3>
           <Text2>Technical Interviewer</Text2>
         </Group1>
         <ButtonPrimary
-          onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
+          onClick={(e) => ButtonProfile(e, "ButtonPrimary")}
         >
-          <ILoveIt>See profile</ILoveIt>
+          <ILoveIt>Profile/History</ILoveIt>
         </ButtonPrimary>
       </Group>
       <Paragraph1>
@@ -37,7 +41,7 @@ export const NotScheduled1 = ({}) => {
         scheduled
       </Paragraph>
       <ButtonPrimary1
-        onClick={(e) => ButtonPrimary1Function(e, "ButtonPrimary1")}
+        onClick={(e) => ButtonFindTime(e, "ButtonPrimary1")}
       >
         <ILoveIt1>Find a time!</ILoveIt1>
       </ButtonPrimary1>

@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
 
 export const WelcomeToMIE1 = ({}) => {
+  const navigate = useNavigate();
+
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+      navigate("/Market1");
   };
   return (
     <WelcomeToMIE>
@@ -15,9 +19,8 @@ export const WelcomeToMIE1 = ({}) => {
         <ButtonPrimary
           onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
         >
-          <ClickMe>Signup</ClickMe>
+          <ClickMe>Login</ClickMe>
         </ButtonPrimary>
-        <Text1>Login</Text1>
       </BG>
     </WelcomeToMIE>
   );

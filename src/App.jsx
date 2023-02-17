@@ -29,7 +29,6 @@ import {ProfilePosts1} from "./screens/ProfilePosts"
 import {Rating1} from "./screens/Rating1"
 import {SearchMessages1} from "./screens/SearchMessages1"
 import {Search1} from "./screens/Search1"
-import {SignUp1} from "./screens/SignUp1"
 import {Tip1} from "./screens/Tip1"
 import {WelcomeToMIE1} from "./screens/WelcomeToMIE1"
 
@@ -57,7 +56,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="Rating1" element={<Rating1 />} /> 
         <Route path="SearchMessages1" element={<SearchMessages1 />} /> 
         <Route path="Search1" element={<Search1 />} /> 
-        <Route path="SignUp1" element={<SignUp1 />} /> 
         <Route path="Tip1" element={<Tip1 />} /> 
         <Route path="WelcomeToMIE1" element={<WelcomeToMIE1 />} /> 
 
@@ -70,19 +68,19 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 function Layout() {
   return (
     <div>
-      {/* <script src="https://sdk.minepi.com/pi-sdk.js"></script>
-    <script>Pi.init({ version: "2.0" })</script> */}
-
+    
       <nav>
        
 <Link to="AlreadyScheduled1">AlreadyScheduled1</Link>
         <Link to="BG1">BG1</Link>
         <Link to="CalendarDrawer1">CalendarDrawer1</Link>
+        <br />
         <Link to="Calendar1">Calendar1</Link>
         <Link to="Calendly1">Calendly1</Link>
         <br />
         <Link to="EditProfilePosts1">EditProfilePosts1</Link>
         <Link to="Feed1">Feed1</Link>
+        <br />
         <Link to="Filter1">Filter1</Link>
         <Link to="InterviewConfirmed1">InterviewConfirmed1</Link>
         
@@ -90,17 +88,17 @@ function Layout() {
         <Link to="JobSeekerProfilePosts1">JobSeekerProfilePosts1</Link>
         <Link to="LogIn1">LogIn1</Link>
         <Link to="Market1">Market1</Link>
+        <br />
         <Link to="Messages1">Messages1</Link>
         
-        <br />
         <Link to="NotScheduled1">NotScheduled1</Link>
         <Link to="ProfilePosts1">ProfilePosts1</Link>
+        <br />
         <Link to="Rating1">Rating1</Link>
         <Link to="SearchMessages1">SearchMessages1</Link>
         <br /><Link to="Search1">Search1</Link>
 
         
-        <Link to="SignUp1">SignUp1</Link>
         <Link to="Tip1">Tip1</Link>
         <Link to="WelcomeToMIE1">WelcomeToMIE1</Link>
 

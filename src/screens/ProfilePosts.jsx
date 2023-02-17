@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
 import { useNavigate } from "react-router-dom";
-import { redirect } from "react-router-dom";
+
 
 
 
 export const ProfilePosts1 = ({}) => {
-
-    const navigate = useNavigate();
-
+  
+  const navigate = useNavigate();
 
 
   const ButtonPrimary2Function = (e, name) => {

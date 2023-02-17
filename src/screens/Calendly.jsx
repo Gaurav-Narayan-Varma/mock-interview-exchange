@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
-
 import { useNavigate } from "react-router-dom";
 
 
@@ -9,7 +7,7 @@ export const Calendly1 = ({}) => {
   const navigate = useNavigate();
 
   const ButtonPrimaryFunction = (e, name) => {
-     navigate("/InterviewConfirmed");
+     navigate("/InterviewConfirmed1");
 
   };
 
@@ -36,9 +34,12 @@ export const Calendly1 = ({}) => {
         <BG1>
           <input value="Enter in your Calendly" />
         </BG1>
-        <BG2>
+        <BG1>
             <input value="Enter in your Zoom call link" />
-        </BG2>
+        </BG1>
+        <BG1>
+            <input value="Propositioned Tip in Pi Coin" />
+        </BG1>
         <Group2>
           <RadioOptionHere>Technical</RadioOptionHere>
           <Radio1>

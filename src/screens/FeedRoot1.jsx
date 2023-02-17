@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
 
 export const Feed1 = ({}) => {
+  
+  const navigate = useNavigate();
   return (
     <Feed>
       <PageHeader>
@@ -161,7 +165,7 @@ const Text11 = styled.div`
 
   box-sizing: border-box;
 `;
-const Feed = styled.div`
+const Feed2 = styled.div`
   font-size: 30px;
   font-weight: 600;
 

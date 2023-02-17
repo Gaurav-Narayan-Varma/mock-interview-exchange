@@ -79,7 +79,7 @@ const Search = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

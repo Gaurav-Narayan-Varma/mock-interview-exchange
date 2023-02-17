@@ -6,7 +6,7 @@ export const Search1 = ({}) => {
     <Search>
       <PageHeader>
         <Text3>Back</Text3>
-        <Text2>Content</Text2>
+        <Text2>Directory</Text2>
         <Text1>Filter</Text1>
       </PageHeader>
       <BG>
@@ -14,61 +14,42 @@ export const Search1 = ({}) => {
       </BG>
       <Text5>Your mocks:</Text5>
       <Group>
-        <ContentBlock />
+        <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4D03AQFjCosFi0uoOA/profile-displayphoto-shrink_400_400/0/1618882572479?e=1681948800&v=beta&t=s7Y6k96xzkX1KSJpxgva0uzjnQB3T3b97ACQnsZP9gk"></img></ContentBlock>
         <Group4>
           <Group5>
-            <Header>Joe</Header>
-            <Text6>8m ago</Text6>
+            <Header>Edgardo Adam</Header>
+            <Text6>March 3, 6:00PM</Text6>
           </Group5>
-          <Text9>https://meet.google.com/jrz-ngus-jov</Text9>
+          <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
         </Group4>
       </Group>
       <DividerLine />
       <Group1>
-        <ContentBlock1 />
-        <Group6>
-          <Group7>
-            <Text7>Header</Text7>
-            <Text8>8m ago</Text8>
-          </Group7>
-          <Paragraph>
-            He'll want to use your yacht, and I don't want this thing smelling
-            like fish.
-          </Paragraph>
-        </Group6>
+      <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4E03AQFbBv4KvvZLyQ/profile-displayphoto-shrink_400_400/0/1517740860047?e=1681948800&v=beta&t=7B3kfLl7L3DEGZsspk4rHzgAvwMt813GIH_jNPN1dQE"></img></ContentBlock>
+        <Group4>
+          <Group5>
+            <Header>Ruth Goyette</Header>
+            <Text6>March 3, 6:00PM</Text6>
+          </Group5>
+          <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
+        </Group4>
       </Group1>
       <DividerLine1 />
       <Group2>
-        <ContentBlock2 />
-        <Group8>
-          <Group9>
-            <Text10>Header</Text10>
-            <Text11>8m ago</Text11>
-          </Group9>
-          <Paragraph1>
-            He'll want to use your yacht, and I don't want this thing smelling
-            like fish.
-          </Paragraph1>
-        </Group8>
+      <ContentBlock><img  width="50px" src="https://media.licdn.com/dms/image/D4D03AQGHVfas_1Gl1A/profile-displayphoto-shrink_400_400/0/1665579676179?e=1681948800&v=beta&t=sWVJsQp4PFTrWyWp1ajqBYwh6OilDzNwvEsMJnxCtYM"></img></ContentBlock>
+        <Group4>
+          <Group5>
+            <Header>Lorna Fahey</Header>
+            <Text6>March 3, 6:00PM</Text6>
+          </Group5>
+          <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
+        </Group4>
       </Group2>
       <DividerLine2 />
-      <Group3>
-        <ContentBlock3 />
-        <Group10>
-          <Group11>
-            <Text12>Header</Text12>
-            <Text13>8m ago</Text13>
-          </Group11>
-          <Paragraph2>
-            He'll want to use your yacht, and I don't want this thing smelling
-            like fish.
-          </Paragraph2>
-        </Group10>
-      </Group3>
-      <DividerLine3 />
     </Search>
   );
 };
+
 
 const Search = styled.div`
   gap: 10px;
@@ -173,7 +154,7 @@ const Group4 = styled.div`
   box-sizing: border-box;
 `;
 const Group5 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -241,7 +222,7 @@ const Group6 = styled.div`
   box-sizing: border-box;
 `;
 const Group7 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -265,7 +246,7 @@ const Text8 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 
@@ -310,7 +291,7 @@ const Group8 = styled.div`
   box-sizing: border-box;
 `;
 const Group9 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -334,7 +315,7 @@ const Text11 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph1 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 
@@ -379,7 +360,7 @@ const Group10 = styled.div`
   box-sizing: border-box;
 `;
 const Group11 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -403,7 +384,7 @@ const Text13 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph2 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 

@@ -189,7 +189,7 @@ const ClickMe1 = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary2 = styled.div`
-  width: 100%;
+  width: auto;
   position: relative;
   display: flex;
   flex-direction: column;

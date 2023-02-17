@@ -1,13 +1,154 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { initializeApp } from 'firebase/app';
+import { getFirestore, query, where, doc, setDoc, getDocs, collection, addDoc } from "firebase/firestore";
+import 'firebase/firestore';
 
-export const Market1 = ({}) => {
-  const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
-  };
-  const LogInFunction = (e, name) => {
-    alert(`${name} was clicked`);
-  };
+
+export const  Market1 = async function (){
+
+
+let mockCards = []
+let mockNames = []
+let mockDates = []
+let cards2 = []
+let names2 = []
+let cards3 = []
+let names3 = []
+
+// initializing firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyD5uvpjFrShXz-ntdEppqQs952_WE-alJE",
+  authDomain: "mock-interview-exchange.firebaseapp.com",
+  projectId: "mock-interview-exchange",
+  storageBucket: "mock-interview-exchange.appspot.com",
+  messagingSenderId: "635925744294",
+  appId: "1:635925744294:web:e9636fa4c77e398af30267",
+  measurementId: "G-W8BXLW9Q20"
+};
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// 
+// query firebase for open technicals
+const qOT = query(collection(db, "mocks"), 
+  where("technical", "==", true),
+  where("interviewee", "==", "")
+);
+// take a snapshot of the query
+const queryOTSnapshot = await getDocs(qOT)
+
+// 
+// query firebase for open behaviorals
+const qOB = query(collection(db, "mocks"), 
+  where("technical", "==", false),
+  where("interviewee", "==", "")
+);
+// take a snapshot of the query
+const queryqOBSnapshot = await getDocs(qOB)
+queryqOBSnapshot.forEach((doc) => {
+  // console.log(doc.id, " => ", doc.data());
+});
+
+// 
+// query firebase for closed Peter Pierre mocks
+const qPPR = query(collection(db, "mocks"),
+  where("interviewee", "==", "Peter Pierre")
+)
+const qPPH = query(collection(db, "mocks"),
+  where("interviewer", "==", "Peter Pierre")
+)
+// take a snapshot of the query
+const queryPPRSnapshot = await getDocs(qPPR)
+const queryPPHSnapshot = await getDocs(qPPH)
+let combinedSnapshot = []
+queryPPRSnapshot.forEach((doc) => {
+  combinedSnapshot.push(doc.data())
+})
+queryPPHSnapshot.forEach((doc) => {
+  combinedSnapshot.push(doc.data())
+})
+ 
+  const [myMocks, setMocks] = useState([])
+  const [myNames, setNames] = useState([])
+  const [myDates, setDates] = useState([])
+  const [myCards2, setCards2] = useState([])
+  const [myNames2, setNames2] = useState([])
+  const [myCards3, setCards3] = useState([])
+  const [myNames3, setNames3] = useState([])
+
+  // queryqOBSnapshot
+
+  useEffect(()=>{
+    queryqOBSnapshot.forEach(async (mock) => {
+      cards3.push(<ItemNameGoesHere>{mock.data().interviewer}</ItemNameGoesHere>)
+      setCards3(myCards3.concat(cards3))
+
+      // for each mock interviewer, query their document in the users database 
+      const techQuery = query(collection(db, "users"), where("name", "==", mock.data().interviewer))
+      const techSnapShot = await getDocs(techQuery)
+      techSnapShot.forEach((partner) => {
+        names3.push(<WhiteSquare8 key={Math.random()}> <img src={partner.data().image} /> </WhiteSquare8>)
+        setNames3(myNames3.concat(names3))
+      })
+    })
+  }, [queryqOBSnapshot])
+
+  useEffect(()=>{
+    queryOTSnapshot.forEach(async (mock) => {
+      cards2.push(<ItemNameGoesHere>{mock.data().interviewer}</ItemNameGoesHere>)
+      setCards2(myCards2.concat(cards2))
+
+      // for each mock interviewer, query their document in the users database 
+      const techQuery = query(collection(db, "users"), where("name", "==", mock.data().interviewer))
+      const techSnapShot = await getDocs(techQuery)
+      techSnapShot.forEach((partner) => {
+        names2.push(<WhiteSquare8 key={Math.random()}> <img src={partner.data().image} /> </WhiteSquare8>)
+        setNames2(myNames2.concat(names2))
+      })
+    })
+  }, [queryOTSnapshot])
+
+  
+  useEffect(()=>{
+    combinedSnapshot.forEach(async (mock) => {
+      let partner
+      
+      const date = new Date(mock.date.seconds*1000);
+      const options = {
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true,
+        timeZone: 'America/Los_Angeles'
+      };
+      const formattedDate = date.toLocaleString('en-US', options);
+      mockDates.push(<ItemNameGoesHere>{formattedDate}</ItemNameGoesHere>)
+
+      setDates(myDates.concat(mockDates))
+        // <WhiteSquare5><img src="https://media.licdn.com/dms/image/C5603AQHLDkCedDmfiQ/profile-displayphoto-shrink_400_400/0/1649972194519?e=1681948800&v=beta&t=SqQK6g-PqlBW4QyokfiU3TZKhs_eAxecgp-buQB4WF8" /></WhiteSquare5>
+
+      mock.interviewer == 'Peter Pierre' ? partner = mock.interviewee : partner = mock.interviewer
+      // for each partner, query the users database to create a mock card with their image inside
+      const partnerQuery = query(collection(db, "users"), where("name", "==", partner))
+      const partnerSnapShot = await getDocs(partnerQuery)
+      partnerSnapShot.forEach((partner) => {
+        mockCards.push(<WhiteSquare8 key={Math.random()}> <img src={partner.data().image} /> </WhiteSquare8>)
+        setMocks(myMocks.concat(mockCards))
+
+        mockNames.push(<ItemNameGoesHere>{partner.data().name}</ItemNameGoesHere>)
+        setNames(myNames.concat(mockNames))
+      })
+
+      // generate components with names of users inside
+      
+
+    })
+  }, [combinedSnapshot])
+  
+
   return (
     <Market>
       <PageHeader>
@@ -20,79 +161,63 @@ export const Market1 = ({}) => {
       </BG>
       <Text4>Your mocks</Text4>
       <Group>
-        <WhiteSquare8 />
-        <WhiteSquare7 />
-        <WhiteSquare6 />
+        {myMocks.length >= 3 ? myMocks : 'loading...'}
       </Group>
       <Group1>
         <Group7>
-          <ItemNameGoesHere>Victoria Harris Feb 28 4:00PM</ItemNameGoesHere>
+          {myNames.length >= 3 ? myNames[0] : 'loading...'}
+          {myDates.length >= 3 ? myDates[0] : 'loading...'}
           <Group8>
-            <ButtonPrimary
-              onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
-            />
-            <LogIn onClick={(e) => LogInFunction(e, "LogIn")} />
-            <Starting>Starting </Starting>
+            {/* onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")} */}
+            <ButtonPrimary>
+              Starting (Host)
+            </ButtonPrimary>
           </Group8>
         </Group7>
-        <ItemNameGoesHere1>
-          send szoom meeting!!!!!
-          <br />
-        </ItemNameGoesHere1>
-        <ItemNameGoesHere2>
-          Item #1 Name
-          <br />
-          Goes Here
-        </ItemNameGoesHere2>
+        <Group7>
+          {myNames.length >= 3 ? myNames[1] : 'loading...'}
+          {myDates.length >= 3 ? myDates[0] : 'loading...'}
+        </Group7>
+        <Group7>
+          {myNames.length >= 3 ? myNames[2] : 'loading...'}
+          {myDates.length >= 3 ? myDates[0] : 'loading...'}
+        </Group7>
       </Group1>
       <Group2>
-        <Text3>Technical Mock</Text3>
         <Text2>Technical Mock</Text2>
       </Group2>
       <Group3>
-        <WhiteSquare5 />
-        <WhiteSquare4 />
-        <WhiteSquare3 />
+        {myNames2.length >= 3 ? myNames2[0] : 'loading...'}
+        {myNames2.length >= 3 ? myNames2[1] : 'loading...'}
+        {myNames2.length >= 3 ? myNames2[2] : 'loading...'}
       </Group3>
       <Group4>
-        <ItemNameGoesHere3>
-          Item #1 Name
-          <br />
-          Goes Here
-        </ItemNameGoesHere3>
-        <ItemNameGoesHere4>
-          Item #1 Name
-          <br />
-          Goes Here
-        </ItemNameGoesHere4>
-        <ItemNameGoesHere5>
-          Item #1 Name
-          <br />
-          Goes Here
-        </ItemNameGoesHere5>
+        <Group7>
+          {myCards2.length >= 3 ? myCards2[0] : 'loading...'}
+        </Group7>
+        <Group7>
+          {myCards2.length >= 3 ? myCards2[1] : 'loading...'}
+        </Group7>
+        <Group7>
+          {myCards2.length >= 3 ? myCards2[2] : 'loading...'}
+        </Group7>
       </Group4>
       <Text1>Behavioral Mock</Text1>
       <Group5>
-        <WhiteSquare2 />
-        <WhiteSquare1 />
-        <WhiteSquare />
+        {myNames3.length >= 3 ? myNames3[0] : 'loading...'}
+        {myNames3.length >= 3 ? myNames3[1] : 'loading...'}
+        {myNames3.length >= 3 ? myNames3[2] : 'loading...'}
       </Group5>
       <Group6>
-        <ItemNameGoesHere6>
-          Item #1 Name
-          <br />
-          Goes Here
-        </ItemNameGoesHere6>
-        <ItemNameGoesHere7>
-          Item #1 Name
-          <br />
-          Goes Here
-        </ItemNameGoesHere7>
-        <ItemNameGoesHere8>
-          Item #1 Name
-          <br />
-          Goes Here
-        </ItemNameGoesHere8>
+        <Group7>
+          {myCards3.length >= 3 ? myCards3[0] : 'loading...'}
+        </Group7>
+        <Group7>
+          {myCards3.length >= 3 ? myCards3[1] : 'loading...'}
+        </Group7>
+        <Group7>
+          {myCards3.length >= 3 ? myCards3[2] : 'loading...'}
+        </Group7>
       </Group6>
     </Market>
   );
@@ -192,6 +317,12 @@ const WhiteSquare8 = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const WhiteSquare7 = styled.div`
   width: 34.38%;
@@ -200,6 +331,12 @@ const WhiteSquare7 = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const WhiteSquare6 = styled.div`
   width: 34.38%;
@@ -208,6 +345,12 @@ const WhiteSquare6 = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const Group1 = styled.div`
   width: 96.77%;
@@ -230,7 +373,7 @@ const Group7 = styled.div`
   box-sizing: border-box;
 `;
 const ItemNameGoesHere = styled.div`
-  width: 100%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 
@@ -246,11 +389,13 @@ const Group8 = styled.div`
   padding: 16px 49px 0px 49px;
   box-sizing: border-box;
 `;
+
 const ButtonPrimary = styled.button`
   width: 98px;
   height: 24px;
   left: 0px;
   top: 0px;
+  color: #ffffff;
   position: absolute;
   padding: 0px;
   border-width: 0px;
@@ -329,42 +474,62 @@ const Text2 = styled.div`
 
   box-sizing: border-box;
 `;
+
 const Group3 = styled.div`
-  width: 97.57%;
-  gap: 16px;
+  width: 96.77%;
+  gap: 13px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-end;
-  margin: 0px 0px 5.78px 0px;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin: 0px 0px 5.78px 5px;
   box-sizing: border-box;
 `;
 const WhiteSquare5 = styled.div`
-  width: 35.03%;
+  width: 34.38%;
   height: 110px;
   align-self: flex-start;
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
+
 const WhiteSquare4 = styled.div`
-  width: 35.03%;
+  width: 34.38%;
   height: 110px;
   align-self: flex-start;
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const WhiteSquare3 = styled.div`
-  width: 35.03%;
+  width: 34.38%;
   height: 110px;
   align-self: flex-start;
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const Group4 = styled.div`
-  width: 97.57%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -403,13 +568,13 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const Group5 = styled.div`
-  width: 97.57%;
-  gap: 16px;
+  width: 96.77%;
+  gap: 13px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-end;
-  margin: 0px 0px 5.78px 0px;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin: 0px 0px 5.78px 5px;
   box-sizing: border-box;
 `;
 const WhiteSquare2 = styled.div`
@@ -419,6 +584,12 @@ const WhiteSquare2 = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const WhiteSquare1 = styled.div`
   width: 35.03%;
@@ -427,6 +598,12 @@ const WhiteSquare1 = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const WhiteSquare = styled.div`
   width: 35.03%;
@@ -435,9 +612,15 @@ const WhiteSquare = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #f6f6f6;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const Group6 = styled.div`
-  width: 97.57%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;

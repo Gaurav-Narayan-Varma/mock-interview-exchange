@@ -100,7 +100,7 @@ const BG1 = styled.div`
   background-image: url("https://file.rendit.io/n/kvZ3d1xfVZgNMhoq30Po.svg");
 `;
 const Paragraph3 = styled.div`
-  width: 100%;
+  width: auto;
   height: 100%;
   align-self: center;
   font-size: 14px;
@@ -119,7 +119,7 @@ const Element2 = styled.div`
   background-image: url("https://file.rendit.io/n/pMf7fvYb4Adk1G2x684b.svg");
 `;
 const Paragraph1 = styled.div`
-  width: 100%;
+  width: auto;
   align-self: center;
   color: #ffffff;
   font-size: 14px;
@@ -138,7 +138,7 @@ const Element1 = styled.div`
   background-image: url("https://file.rendit.io/n/pMf7fvYb4Adk1G2x684b.svg");
 `;
 const Paragraph = styled.div`
-  width: 100%;
+  width: auto;
   align-self: center;
   color: #ffffff;
   font-size: 14px;
@@ -157,7 +157,7 @@ const BG2 = styled.div`
   background-image: url("https://file.rendit.io/n/kvZ3d1xfVZgNMhoq30Po.svg");
 `;
 const Paragraph2 = styled.div`
-  width: 100%;
+  width: auto;
   height: 100%;
   align-self: center;
   font-size: 14px;

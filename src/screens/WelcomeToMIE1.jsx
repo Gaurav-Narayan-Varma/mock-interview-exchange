@@ -8,8 +8,10 @@ export const WelcomeToMIE1 = ({}) => {
   return (
     <WelcomeToMIE>
       <BG>
-        <Text2>Welcome to Mock IE</Text2>
-        <Text3>Starting doing interview today!</Text3>
+        <Text2>Welcome to Mock Interview Exchange!</Text2>
+        <Text3>Improve your coding skills and prepare for job interviews by connecting with top-rated interview hosts for free.
+          If you find a host whose guidance you appreciate, express your gratitude by 
+          tipping them with Pi, a user-friendly and inclusive cryptocurrency with a low mining barrier.</Text3>
         <ButtonPrimary
           onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
         >
@@ -31,7 +33,7 @@ const WelcomeToMIE = styled.div`
   overflow: hidden;
 `;
 const BG = styled.div`
-  width: 100%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: column;
@@ -61,7 +63,7 @@ const Text3 = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

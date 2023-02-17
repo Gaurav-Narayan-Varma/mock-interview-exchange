@@ -54,7 +54,7 @@ const Handle = styled.div`
   background-color: #e7e7e7;
 `;
 const ButtonPrimary = styled.button`
-  width: 93.68%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

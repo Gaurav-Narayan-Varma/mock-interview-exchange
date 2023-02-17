@@ -65,7 +65,7 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const ImageBlock = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,7 +155,7 @@ const Paragraph1 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph = styled.div`
-  width: 100%;
+  width: auto;
   align-self: center;
   margin: 0px 0px 18px 0px;
   color: #666666;
@@ -165,7 +165,7 @@ const Paragraph = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary1 = styled.button`
-  width: 90.67%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

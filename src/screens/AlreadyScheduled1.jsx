@@ -54,7 +54,7 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const ImageBlock = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

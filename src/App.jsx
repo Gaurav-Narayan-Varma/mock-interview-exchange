@@ -70,6 +70,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 function Layout() {
   return (
     <div>
+      {/* <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+    <script>Pi.init({ version: "2.0" })</script> */}
+
       <nav>
        
 <Link to="AlreadyScheduled1">AlreadyScheduled1</Link>

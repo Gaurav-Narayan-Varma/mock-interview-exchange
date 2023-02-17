@@ -36,7 +36,7 @@ const InterviewConfirmed = styled.div`
   overflow: hidden;
 `;
 const BG = styled.div`
-  width: 100%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph = styled.div`
-  width: 100%;
+  width: auto;
   margin: 0px 0px 29px 0px;
   color: #666666;
   font-size: 16px;
@@ -66,7 +66,7 @@ const Paragraph = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

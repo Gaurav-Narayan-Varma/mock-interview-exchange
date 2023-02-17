@@ -34,10 +34,10 @@ export const Calendly1 = ({}) => {
       <BG>
         <Text1>Do Interviews!</Text1>
         <BG1>
-          <Search>Enter in your Calendly</Search>
+          <input value="Enter in your Calendly" />
         </BG1>
         <BG2>
-          <Search1>Enter in your Google Meets</Search1>
+            <input value="Enter in your Zoom call link" />
         </BG2>
         <Group2>
           <RadioOptionHere>Technical</RadioOptionHere>
@@ -138,7 +138,9 @@ const Element2 = styled.div`
   padding: 2px;
   box-sizing: border-box;
   background-size: cover;
-  background-image: url("https://file.rendit.io/n/iwsDB4mjcdn2U6f5LtIy.svg");
+  background-color: #eee;
+  border: 1px solid gray;
+  border-radius: 10px;
 `;
 const Image1 = styled.img`
   min-width: 0px;
@@ -164,7 +166,7 @@ const BG = styled.div`
   padding: 17px 16px 19px 16px;
   box-sizing: border-box;
   background-size: cover;
-  background-image: url("https://file.rendit.io/n/kDWckuXgTc9kQsjuXhz6.svg");
+  background-color: white;
 `;
 const Text1 = styled.div`
   align-self: center;
@@ -184,7 +186,10 @@ const BG1 = styled.div`
   padding: 16px 16px 15px 16px;
   box-sizing: border-box;
   background-size: cover;
-  background-image: url("https://file.rendit.io/n/MNyVMWyhq8C8ySFv3KX3.svg");
+  
+  background-color: #eee;
+  border: 1px solid gray;
+  border-radius: 10px;
 `;
 const Search = styled.div`
   align-self: flex-start;
@@ -204,7 +209,10 @@ const BG2 = styled.div`
   padding: 16px 16px 15px 16px;
   box-sizing: border-box;
   background-size: cover;
-  background-image: url("https://file.rendit.io/n/MNyVMWyhq8C8ySFv3KX3.svg");
+  
+  background-color: #eee;
+  border: 1px solid gray;
+  border-radius: 10px;
 `;
 const Search1 = styled.div`
   align-self: flex-start;
@@ -331,7 +339,7 @@ const Divider2 = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

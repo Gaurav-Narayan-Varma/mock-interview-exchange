@@ -546,7 +546,7 @@ const Text7 = styled.div`
   box-sizing: border-box;
 `;
 const Group1 = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -578,7 +578,7 @@ const Text5 = styled.div`
   box-sizing: border-box;
 `;
 const Divider = styled.div`
-  width: 91.47%;
+  width: auto;
   height: 1px;
   flex-shrink: 0;
   align-self: center;
@@ -588,7 +588,7 @@ const Divider = styled.div`
   box-sizing: border-box;
 `;
 const Group2 = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -620,7 +620,7 @@ const Text3 = styled.div`
   box-sizing: border-box;
 `;
 const Divider1 = styled.div`
-  width: 91.47%;
+  width: auto;
   height: 1px;
   flex-shrink: 0;
   align-self: center;
@@ -630,7 +630,7 @@ const Divider1 = styled.div`
   box-sizing: border-box;
 `;
 const Group3 = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -662,7 +662,7 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const Divider2 = styled.div`
-  width: 91.47%;
+  width: auto;
   height: 1px;
   flex-shrink: 0;
   align-self: center;
@@ -672,7 +672,7 @@ const Divider2 = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 82.93%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

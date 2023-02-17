@@ -43,15 +43,14 @@ const Rating = styled.div`
   overflow: hidden;
 `;
 const BG = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-self: center;
   padding: 15px 16px 69px 16px;
   box-sizing: border-box;
-  background-size: cover;
-  background-image: url("https://file.rendit.io/n/EGA5E1OFHyb6gijUpQKe.svg");
+  background-color: white;
 `;
 const Text2 = styled.div`
   align-self: flex-end;
@@ -111,7 +110,7 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const BG1 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -120,7 +119,6 @@ const BG1 = styled.div`
   padding: 32px 16px 12px 16px;
   box-sizing: border-box;
   background-size: cover;
-  background-image: url("https://file.rendit.io/n/v454jd94622F3BDO37RR.svg");
 `;
 const Search = styled.div`
   align-self: flex-start;
@@ -131,7 +129,7 @@ const Search = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

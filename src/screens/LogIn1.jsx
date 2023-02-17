@@ -164,7 +164,7 @@ const Text6 = styled.div`
   box-sizing: border-box;
 `;
 const BG = styled.div`
-  width: 91.47%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -184,7 +184,7 @@ const Text5 = styled.div`
   box-sizing: border-box;
 `;
 const BG1 = styled.div`
-  width: 91.47%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -215,7 +215,7 @@ const Text4 = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 91.47%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,7 +254,7 @@ const Text1 = styled.div`
   box-sizing: border-box;
 `;
 const SilverRectangle = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -263,7 +263,7 @@ const SilverRectangle = styled.div`
   background-color: #ccced3;
 `;
 const Background = styled.div`
-  width: 100%;
+  width: auto;
   gap: 11px;
   display: flex;
   flex-direction: column;
@@ -275,7 +275,7 @@ const Background = styled.div`
   backdrop-filter: blur(21px);
 `;
 const Group = styled.div`
-  width: 100%;
+  width: auto;
   gap: 5px;
   display: flex;
   flex-direction: row;
@@ -299,7 +299,6 @@ const WhiteRectangle25 = styled.div`
 const Symbol26 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -320,7 +319,6 @@ const WhiteRectangle24 = styled.div`
 const Symbol25 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -340,7 +338,6 @@ const WhiteRectangle23 = styled.div`
 const Symbol24 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -361,7 +358,6 @@ const WhiteRectangle22 = styled.div`
 const Symbol23 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -381,7 +377,6 @@ const WhiteRectangle21 = styled.div`
 const Symbol22 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -402,7 +397,6 @@ const WhiteRectangle20 = styled.div`
 const Symbol21 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -422,7 +416,6 @@ const WhiteRectangle19 = styled.div`
 const Symbol20 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -443,7 +436,6 @@ const WhiteRectangle18 = styled.div`
 const Symbol19 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -463,7 +455,6 @@ const WhiteRectangle17 = styled.div`
 const Symbol18 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -483,7 +474,6 @@ const WhiteRectangle16 = styled.div`
 const Symbol17 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -513,7 +503,6 @@ const WhiteRectangle15 = styled.div`
 const Symbol16 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -534,7 +523,6 @@ const WhiteRectangle14 = styled.div`
 const Symbol15 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -554,7 +542,6 @@ const WhiteRectangle13 = styled.div`
 const Symbol14 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -575,7 +562,6 @@ const WhiteRectangle12 = styled.div`
 const Symbol13 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -595,7 +581,6 @@ const WhiteRectangle11 = styled.div`
 const Symbol12 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -616,7 +601,6 @@ const WhiteRectangle10 = styled.div`
 const Symbol11 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -636,7 +620,6 @@ const WhiteRectangle9 = styled.div`
 const Symbol10 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -657,7 +640,6 @@ const WhiteRectangle8 = styled.div`
 const Symbol9 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -677,13 +659,12 @@ const WhiteRectangle7 = styled.div`
 const Symbol8 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
 `;
 const Group2 = styled.div`
-  width: 100%;
+  width: auto;
   gap: 5px;
   display: flex;
   flex-direction: row;
@@ -710,7 +691,6 @@ const Symbol = styled.div`
   top: 8px;
   position: absolute;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -741,7 +721,6 @@ const WhiteRectangle6 = styled.div`
 const Symbol7 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -761,7 +740,6 @@ const WhiteRectangle5 = styled.div`
 const Symbol6 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -782,7 +760,6 @@ const WhiteRectangle4 = styled.div`
 const Symbol5 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -802,7 +779,6 @@ const WhiteRectangle3 = styled.div`
 const Symbol4 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -823,7 +799,6 @@ const WhiteRectangle2 = styled.div`
 const Symbol3 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -844,7 +819,6 @@ const WhiteRectangle1 = styled.div`
 const Symbol2 = styled.div`
   align-self: flex-end;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -865,7 +839,6 @@ const WhiteRectangle = styled.div`
 const Symbol1 = styled.div`
   align-self: flex-start;
   font-size: 22.5px;
-  font-family: SF Pro Text;
   text-align: center;
   letter-spacing: -0.55px;
   box-sizing: border-box;
@@ -889,7 +862,6 @@ const Label3 = styled.div`
   top: 11px;
   position: absolute;
   font-size: 16px;
-  font-family: SF Pro Text;
   line-height: 21px;
   text-align: center;
   letter-spacing: -0.32px;
@@ -914,7 +886,7 @@ const DeleteButton = styled.button`
   } ;
 `;
 const Group3 = styled.div`
-  width: 100%;
+  width: auto;
   gap: 6px;
   display: flex;
   flex-direction: row;
@@ -935,10 +907,9 @@ const Element3 = styled.div`
   background-image: url("https://file.rendit.io/n/NkbNEY3Fs2QbZbxnaPUa.svg");
 `;
 const Label2 = styled.div`
-  width: 100%;
+  width: auto;
   align-self: flex-start;
   font-size: 16px;
-  font-family: SF Pro Text;
   line-height: 21px;
   text-align: center;
   letter-spacing: -0.32px;
@@ -956,10 +927,9 @@ const Element2 = styled.div`
   background-image: url("https://file.rendit.io/n/tmIoaSCRfZdiqEAWhafz.svg");
 `;
 const Label1 = styled.div`
-  width: 100%;
+  width: auto;
   align-self: flex-start;
   font-size: 16px;
-  font-family: SF Pro Text;
   line-height: 21px;
   text-align: center;
   letter-spacing: -0.32px;
@@ -977,10 +947,9 @@ const Element1 = styled.div`
   background-image: url("https://file.rendit.io/n/Erad58NMiTXfONelPmnT.svg");
 `;
 const Label = styled.div`
-  width: 100%;
+  width: auto;
   align-self: flex-start;
   font-size: 16px;
-  font-family: SF Pro Text;
   line-height: 21px;
   text-align: center;
   letter-spacing: -0.32px;

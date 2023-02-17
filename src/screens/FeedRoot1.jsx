@@ -103,7 +103,7 @@ const Group4 = styled.div`
   box-sizing: border-box;
 `;
 const Group5 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -127,7 +127,7 @@ const Text7 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph2 = styled.div`
-  width: 97.11%;
+  width: auto;
   font-size: 14px;
 
   box-sizing: border-box;

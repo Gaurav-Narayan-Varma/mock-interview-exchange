@@ -101,7 +101,7 @@ const Paragraph = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 97.03%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

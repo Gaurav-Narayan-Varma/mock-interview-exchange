@@ -223,7 +223,7 @@ const Group5 = styled.div`
   box-sizing: border-box;
 `;
 const Group6 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -247,7 +247,7 @@ const Text6 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 
@@ -291,7 +291,7 @@ const Group7 = styled.div`
   box-sizing: border-box;
 `;
 const Group8 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -315,7 +315,7 @@ const Text8 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph1 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 
@@ -359,7 +359,7 @@ const Group9 = styled.div`
   box-sizing: border-box;
 `;
 const Group10 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -383,7 +383,7 @@ const Text10 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph2 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 

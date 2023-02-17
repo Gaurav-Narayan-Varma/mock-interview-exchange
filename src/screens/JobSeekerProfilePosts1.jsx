@@ -66,11 +66,6 @@ export const JobSeekerProfilePosts1 = ({}) => {
             He'll want to use your yacht, and I don't want this thing smelling
             like fish.
           </Paragraph1>
-          <ButtonPrimary1
-            onClick={(e) => ButtonPrimary1Function(e, "ButtonPrimary1")}
-          >
-            <ClickMe1>!</ClickMe1>
-          </ButtonPrimary1>
           <Text7>8m ago</Text7>
         </Group9>
       </Group2>
@@ -270,7 +265,7 @@ const Text3 = styled.div`
   box-sizing: border-box;
 `;
 const BG = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 50.5px;
   display: flex;
   flex-direction: row;
@@ -336,7 +331,7 @@ const Photos = styled.div`
   box-sizing: border-box;
 `;
 const Group1 = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -364,7 +359,7 @@ const Group7 = styled.div`
   box-sizing: border-box;
 `;
 const Group8 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -388,7 +383,7 @@ const Text6 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 
@@ -405,7 +400,7 @@ const DividerLine = styled.div`
   box-sizing: border-box;
 `;
 const Group2 = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -504,7 +499,7 @@ const DividerLine1 = styled.div`
   box-sizing: border-box;
 `;
 const Group3 = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -532,7 +527,7 @@ const Group10 = styled.div`
   box-sizing: border-box;
 `;
 const Group11 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -556,7 +551,7 @@ const Text9 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph2 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 
@@ -573,7 +568,7 @@ const DividerLine2 = styled.div`
   box-sizing: border-box;
 `;
 const Group4 = styled.div`
-  width: 91.47%;
+  width: auto;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -601,7 +596,7 @@ const Group12 = styled.div`
   box-sizing: border-box;
 `;
 const Group13 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -625,7 +620,7 @@ const Text11 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph3 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
 

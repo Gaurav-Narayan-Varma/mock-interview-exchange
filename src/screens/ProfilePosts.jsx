@@ -65,20 +65,15 @@ export const ProfilePosts1 = ({}) => {
             <Text6>8m ago</Text6>
           </Group7>
           <Paragraph>
-            He'll want to use your yacht, and I don't want this thing smelling
-            like fish.
+            Interview with Mark Waters 1/23/2023
           </Paragraph>
         </Group6>
       </Group2>
       <DividerLine />
       <Group3>
         <ContentBlock1 />
-        <Header1>Upcoming interview</Header1>
-        <ButtonPrimary1
-          onClick={(e) => ButtonPrimary1Function(e, "ButtonPrimary1")}
-        >
-          <ClickMe1>!</ClickMe1>
-        </ButtonPrimary1>
+        <Header1>Upcoming interviews</Header1>
+       
         <Text7>8m ago</Text7>
       </Group3>
       <DividerLine1 />
@@ -90,8 +85,7 @@ export const ProfilePosts1 = ({}) => {
             <Text9>8m ago</Text9>
           </Group9>
           <Paragraph2>
-            He'll want to use your yacht, and I don't want this thing smelling
-            like fish.
+               1/23/2023
           </Paragraph2>
         </Group8>
       </Group4>
@@ -104,8 +98,7 @@ export const ProfilePosts1 = ({}) => {
             <Text11>8m ago</Text11>
           </Group11>
           <Paragraph3>
-            He'll want to use your yacht, and I don't want this thing smelling
-            like fish.
+          Interview with Kelly Rew 1/23/2023
           </Paragraph3>
         </Group10>
       </Group5>
@@ -365,7 +358,7 @@ const Group6 = styled.div`
   box-sizing: border-box;
 `;
 const Group7 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -389,7 +382,7 @@ const Text6 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
   
@@ -414,23 +407,25 @@ const Group3 = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-self: center;
-  margin: 0px 0px 26px 0px;
+  margin: 30px 0px 0px 0px;
   box-sizing: border-box;
 `;
 const ContentBlock1 = styled.div`
-  width: 16.29%;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   align-self: flex-start;
   margin: 0px 7px 0px 0px;
-  border-radius: 8px;
+  border-radius: 3px;
   box-sizing: border-box;
   background-color: #f6f6f6;
 `;
 const Header1 = styled.div`
   align-self: flex-start;
-  margin: 0px 0px 31px 0px;
+  margin: 20px 0px 31px 0px;
   font-size: 16px;
   font-weight: 600;
+  padding-left:15px;
+
   
   box-sizing: border-box;
 `;
@@ -514,7 +509,7 @@ const Group8 = styled.div`
   box-sizing: border-box;
 `;
 const Group9 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -538,7 +533,7 @@ const Text9 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph2 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
   
@@ -585,7 +580,7 @@ const Group10 = styled.div`
   box-sizing: border-box;
 `;
 const Group11 = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -609,7 +604,7 @@ const Text11 = styled.div`
   box-sizing: border-box;
 `;
 const Paragraph3 = styled.div`
-  width: 97.11%;
+  width: auto;
   align-self: flex-start;
   font-size: 14px;
   

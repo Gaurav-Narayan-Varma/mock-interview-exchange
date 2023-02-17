@@ -5,10 +5,6 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, query, where, doc, setDoc, getDocs, collection, addDoc } from "firebase/firestore";
 import 'firebase/firestore';
 
-
-export const  Market1 = async function (){
-
-
 let mockCards = []
 let mockNames = []
 let mockDates = []
@@ -70,6 +66,7 @@ queryPPHSnapshot.forEach((doc) => {
   combinedSnapshot.push(doc.data())
 })
  
+export const Market1 = ({}) => {
   const [myMocks, setMocks] = useState([])
   const [myNames, setNames] = useState([])
   const [myDates, setDates] = useState([])
@@ -373,7 +370,7 @@ const Group7 = styled.div`
   box-sizing: border-box;
 `;
 const ItemNameGoesHere = styled.div`
-  width: auto;
+  width: 100%;
   align-self: flex-start;
   font-size: 14px;
 
@@ -529,7 +526,7 @@ const WhiteSquare3 = styled.div`
   }
 `;
 const Group4 = styled.div`
-  width: auto;
+  width: 97.57%;
   gap: 16px;
   display: flex;
   flex-direction: row;
@@ -620,7 +617,7 @@ const WhiteSquare = styled.div`
   }
 `;
 const Group6 = styled.div`
-  width: auto;
+  width: 97.57%;
   gap: 16px;
   display: flex;
   flex-direction: row;

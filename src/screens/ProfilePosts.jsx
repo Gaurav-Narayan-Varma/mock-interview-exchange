@@ -22,6 +22,7 @@ export const ProfilePosts1 = ({}) => {
   const ButtonPrimary1Function = (e, name) => {
     alert(`${name} was clicked`);
   };
+  
   return (
     <ProfilePosts>
       <FernRectangle>
@@ -29,11 +30,7 @@ export const ProfilePosts1 = ({}) => {
         <Text1>Profile</Text1>
         <Logout>Messages</Logout>
       </FernRectangle>
-      <Ellipse src={`https://file.rendit.io/n/txWL3DGoy3mFJG3pRZNZ.png`} />
-      <Paragraph1>
-        He'll want to use your yacht, and I don't want this thing smelling like
-        fish.
-      </Paragraph1>
+      <Ellipse src={`https://media.licdn.com/dms/image/C4E03AQHkt6jZ5A6fWQ/profile-displayphoto-shrink_400_400/0/1604676461434?e=1681948800&v=beta&t=TRFG_U2cT2VjM3ChHt3r7hNfG_OKk3aR07OYi4uuEUo`} />
       <Group1>
         <ButtonPrimary2
           onClick={(e) => ButtonPrimary2Function(e, "ButtonPrimary2")}
@@ -46,61 +43,44 @@ export const ProfilePosts1 = ({}) => {
           <ClickMe>Do Interviews!</ClickMe>
         </ButtonPrimary>
       </Group1>
-      <Text2>Joe Job Seeker</Text2>
-      <Text3>A mantra goes here</Text3>
-      <BG>
-        <Text4>Search</Text4>
-        <BG1>
-          <Text5>Posts</Text5>
-        </BG1>
-        <Photos>Resume</Photos>
-      </BG>
-      <Group2>
-        <ContentBlock />
-        <Group6>
-          <Group7>
-            <Header>Past Interviews</Header>
-            <Text6>8m ago</Text6>
-          </Group7>
-          <Paragraph>
-            Interview with Mark Waters 1/23/2023
-          </Paragraph>
-        </Group6>
-      </Group2>
+      <Text2>Peter Pierre</Text2>
+
+      <Text3>Ex-IBM, 10+ YOE</Text3>
+      <Text5>Your mocks:</Text5>
+
+      <Group>
+        <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4D03AQFjCosFi0uoOA/profile-displayphoto-shrink_400_400/0/1618882572479?e=1681948800&v=beta&t=s7Y6k96xzkX1KSJpxgva0uzjnQB3T3b97ACQnsZP9gk"></img></ContentBlock>
+        <Group4>
+          <Group5>
+            <Header>Edgardo Adam</Header>
+            <Text6>March 3, 6:00PM</Text6>
+          </Group5>
+          <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
+        </Group4>
+      </Group>
       <DividerLine />
-      <Group3>
-        <ContentBlock1 />
-        <Header1>Upcoming interviews</Header1>
-       
-        <Text7>8m ago</Text7>
-      </Group3>
+      <Group>
+      <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4E03AQFbBv4KvvZLyQ/profile-displayphoto-shrink_400_400/0/1517740860047?e=1681948800&v=beta&t=7B3kfLl7L3DEGZsspk4rHzgAvwMt813GIH_jNPN1dQE"></img></ContentBlock>
+        <Group4>
+          <Group5>
+            <Header>Ruth Goyette</Header>
+            <Text6>March 3, 6:00PM</Text6>
+          </Group5>
+          <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
+        </Group4>
+      </Group>
       <DividerLine1 />
-      <Group4>
-        <ContentBlock2 />
-        <Group8>
-          <Group9>
-            <Text8>Header</Text8>
-            <Text9>8m ago</Text9>
-          </Group9>
-          <Paragraph2>
-               1/23/2023
-          </Paragraph2>
-        </Group8>
-      </Group4>
+      <Group2>
+      <ContentBlock><img  width="50px" src="https://media.licdn.com/dms/image/D4D03AQGHVfas_1Gl1A/profile-displayphoto-shrink_400_400/0/1665579676179?e=1681948800&v=beta&t=sWVJsQp4PFTrWyWp1ajqBYwh6OilDzNwvEsMJnxCtYM"></img></ContentBlock>
+        <Group4>
+          <Group5>
+            <Header>Lorna Fahey</Header>
+            <Text6>March 3, 6:00PM</Text6>
+          </Group5>
+          <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
+        </Group4>
+      </Group2>
       <DividerLine2 />
-      <Group5>
-        <ContentBlock3 />
-        <Group10>
-          <Group11>
-            <Text10>Header</Text10>
-            <Text11>8m ago</Text11>
-          </Group11>
-          <Paragraph3>
-          Interview with Kelly Rew 1/23/2023
-          </Paragraph3>
-        </Group10>
-      </Group5>
-      <DividerLine3 />
     </ProfilePosts>
   );
 };

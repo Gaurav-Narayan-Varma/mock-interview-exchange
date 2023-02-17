@@ -70,41 +70,28 @@ function Layout() {
     <div>
     
       <nav>
+        
+      <Link to="Market1">Default</Link> 
        
-<Link to="AlreadyScheduled1">AlreadyScheduled1</Link>
-        <Link to="BG1">BG1</Link>
-        <Link to="CalendarDrawer1">CalendarDrawer1</Link>
+      
+        <Link to="AlreadyScheduled1"> Coming UP </Link> 
+        <Link to="BG1"> Post-Iv </Link>
+        <Link to="CalendarDrawer1">Host View</Link>
         <br />
         <Link to="Calendar1">Calendar1</Link>
         <Link to="Calendly1">Calendly1</Link>
         <br />
         <Link to="EditProfilePosts1">EditProfilePosts1</Link>
-        <Link to="Feed1">Feed1</Link>
-        <br />
-        <Link to="Filter1">Filter1</Link>
-        <Link to="InterviewConfirmed1">InterviewConfirmed1</Link>
-        
-        <br />
+
         <Link to="JobSeekerProfilePosts1">JobSeekerProfilePosts1</Link>
-        <Link to="LogIn1">LogIn1</Link>
-        <Link to="Market1">Market1</Link>
-        <br />
-        <Link to="Messages1">Messages1</Link>
-        
-        <Link to="NotScheduled1">NotScheduled1</Link>
+
         <Link to="ProfilePosts1">ProfilePosts1</Link>
         <br />
         <Link to="Rating1">Rating1</Link>
         <Link to="SearchMessages1">SearchMessages1</Link>
-        <br /><Link to="Search1">Search1</Link>
-
         
         <Link to="Tip1">Tip1</Link>
-        <Link to="WelcomeToMIE1">WelcomeToMIE1</Link>
 
-
-         
-        {/* Outlet does the rendering output */}
          <Outlet />
          
       </nav>

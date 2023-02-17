@@ -8,7 +8,7 @@ export const CalendarDrawer1 = ({}) => {
   
   const ButtonPrimary1Function = (e, name) => {      
       
-    navigate("/JobSeekerProfilePosts1");
+    navigate("/ProfilePosts1");
 
   };
   const ButtonPrimary3Function = (e, name) => {

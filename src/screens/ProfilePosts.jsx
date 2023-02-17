@@ -220,12 +220,12 @@ const SignUp = styled.div`
   box-sizing: border-box;
 `;
 const ButtonPrimary = styled.button`
-  width: 655%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-self: flex-start;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 10px -100px;
   padding: 0px;
   padding-top: 16px;
   padding-right: 9.5px;

@@ -7,7 +7,35 @@ export const Tip1 = ({}) => {
   
   const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
+            
+        Pi.createPayment({
+          // Amount of π to be paid:
+          amount: 0.00314,
+          // An explanation of the payment - will be shown to the user:
+          memo: "tip", // e.g: "Digital kitten #1234",
+          // An arbitrary developer-provided metadata object - for your own usage:
+          metadata: { }, // e.g: { kittenId: 1234 }
+        }, {
+          // Callbacks you need to implement - read more about those in the detailed docs linked below:
+          onReadyForServerApproval: function(paymentId) { 
+
+           },
+          onReadyForServerCompletion: function(paymentId, txid) { 
+
+            
     navigate("/Market1")
+
+          },
+          onCancel: function(paymentId) { 
+            
+    navigate("/Market1")
+           },
+          onError: function(error, payment) { 
+            
+    navigate("/Market1")
+           },
+        });
+
 
   };
   return (

@@ -6,7 +6,9 @@ import { useNavigate } from "react-router-dom";
 export const WelcomeToMIE1 = ({}) => {
   const navigate = useNavigate();
 
+
   const ButtonPrimaryFunction = (e, name) => {
+
       navigate("/Market1");
   };
   return (

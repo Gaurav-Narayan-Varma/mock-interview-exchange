@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
 
 
 
 export const ProfilePosts1 = ({}) => {
-  
-  const navigate = useNavigate();
+
+    const navigate = useNavigate();
+
 
 
   const ButtonPrimary2Function = (e, name) => {
@@ -22,7 +24,6 @@ export const ProfilePosts1 = ({}) => {
   const ButtonPrimary1Function = (e, name) => {
     alert(`${name} was clicked`);
   };
-  
   return (
     <ProfilePosts>
       <FernRectangle>
@@ -85,6 +86,35 @@ export const ProfilePosts1 = ({}) => {
   );
 };
 
+const Group = styled.div`
+  width: 98.28%;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-end;
+  margin: 0px 0px 16px 0px;
+  box-sizing: border-box;
+`;
+
+const Group4 = styled.div`
+  width: 89.07%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin: 0px 0px 6px 0px;
+  box-sizing: border-box;
+`;
+const Group5 = styled.div`
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  box-sizing: border-box;
+`;
 const ProfilePosts = styled.div`
   position: relative;
   display: flex;
@@ -140,13 +170,14 @@ const Logout = styled.div`
 `;
 const Ellipse = styled.img`
   width: 158px;
-  min-width: 0px;
   height: 158px;
-  min-height: 0px;
+  border-radius: 50%;
+  object-fit: cover;
   left: 108px;
   top: 90px;
   position: absolute;
   box-sizing: border-box;
+
 `;
 const Paragraph1 = styled.div`
   width: 269px;
@@ -229,24 +260,24 @@ const ClickMe = styled.div`
 `;
 const Text2 = styled.div`
   position: relative;
-  align-self: flex-end;
-  margin: 0px 70px 8px 0px;
+  margin: 0 auto 8px; /* Center the element horizontally */
+  width: fit-content; /* Set the width to the size of the content */
   font-size: 30px;
   font-weight: 600;
-  
   text-align: center;
   box-sizing: border-box;
 `;
+
 const Text3 = styled.div`
   position: relative;
-  align-self: flex-end;
-  margin: 0px 106px 0px 0px;
+  margin: 0 auto 30px; /* Center the element horizontally */
+  width: fit-content; /* Set the width to the size of the content */
   font-size: 16px;
   font-weight: 600;
-  
   text-align: center;
   box-sizing: border-box;
 `;
+
 const BG = styled.div`
   width: 93.46%;
   position: relative;
@@ -287,12 +318,11 @@ const BG1 = styled.div`
   background-image: url("https://file.rendit.io/n/dSZ0SJ9IcfXIGozjWWSf.svg");
 `;
 const Text5 = styled.div`
-  align-self: flex-end;
-  color: #5db074;
-  font-size: 16px;
-  font-weight: 600;
-  
-  text-align: center;
+  align-self: flex-start;
+  margin: 0px 0px 1px 6px;
+  font-size: 24px;
+  font-weight: 500;
+
   box-sizing: border-box;
 `;
 const Photos = styled.div`
@@ -457,17 +487,7 @@ const DividerLine1 = styled.div`
   border-color: #e7e7e7;
   box-sizing: border-box;
 `;
-const Group4 = styled.div`
-  width: 93.46%;
-  position: relative;
-  gap: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: center;
-  margin: 0px 0px 15px 0px;
-  box-sizing: border-box;
-`;
+
 const ContentBlock2 = styled.div`
   width: 16.08%;
   height: 50px;
@@ -502,12 +522,9 @@ const Text8 = styled.div`
   box-sizing: border-box;
 `;
 const Text9 = styled.div`
-  align-self: flex-end;
-  margin: 2px 0px 0px 0px;
-  color: #bdbdbd;
+  align-self: flex-start;
   font-size: 14px;
-  
-  text-align: right;
+
   box-sizing: border-box;
 `;
 const Paragraph2 = styled.div`
@@ -528,17 +545,7 @@ const DividerLine2 = styled.div`
   border-color: #e7e7e7;
   box-sizing: border-box;
 `;
-const Group5 = styled.div`
-  width: 93.46%;
-  position: relative;
-  gap: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: center;
-  margin: 0px 0px 15px 0px;
-  box-sizing: border-box;
-`;
+
 const ContentBlock3 = styled.div`
   width: 16.08%;
   height: 50px;

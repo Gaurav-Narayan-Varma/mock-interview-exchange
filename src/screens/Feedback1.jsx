@@ -18,8 +18,10 @@ export const BG1 = ({}) => {
         </Star>
       </Group>
       <Paragraph>
-        Feedback: I thought Victoria was a great interviewer! She gave good
-        feedback
+
+      Give feedback on behavioral skills
+            <br /> and ability to question
+
       </Paragraph>
       <ButtonPrimary onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         <ClickMe>Close</ClickMe>

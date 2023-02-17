@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import {
   BrowserRouter,
   Routes,
@@ -35,7 +35,9 @@ import {WelcomeToMIE1} from "./screens/WelcomeToMIE1"
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
    <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<WelcomeToMIE1 />} />
+
+
         <Route path="AlreadyScheduled1" element={<AlreadyScheduled1 />} /> 
         <Route path="BG1" element={<BG1 />} /> 
         <Route path="CalendarDrawer1" element={<CalendarDrawer1 />} /> 
@@ -56,7 +58,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="Tip1" element={<Tip1 />} /> 
         <Route path="WelcomeToMIE1" element={<WelcomeToMIE1 />} /> 
 
-      </Route>
    </Routes>
 </BrowserRouter>
 );
@@ -67,7 +68,7 @@ function Layout() {
     <div>
     
       <nav>
-        
+
    
          <Outlet />
          

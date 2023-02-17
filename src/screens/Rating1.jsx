@@ -23,8 +23,9 @@ export const Rating1 = ({}) => {
         <Text1>Give feedback</Text1>
         <BG1>
           <Search>
-            Give feedback on behavioral skills
-            <br /> and ability to question
+
+          Feedback: I thought Ruth was technically proficient and very friendly.
+
           </Search>
         </BG1>
         <ButtonPrimary

@@ -30,7 +30,7 @@ const WelcomeToMIE = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 224px 16px 225px 16px;
+  padding: 44px 16px 25px 16px;
   box-sizing: border-box;
   background-color: #5db074;
   overflow: hidden;

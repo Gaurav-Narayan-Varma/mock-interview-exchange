@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build --target esnext"
   },
   "dependencies": {
     "firebase": "^9.17.1",

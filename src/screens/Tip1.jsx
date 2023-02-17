@@ -45,7 +45,7 @@ const Tip = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 205px 15px 164px 15px;
+  padding: 55px 15px 104px 15px;
   box-sizing: border-box;
   background-color: #5db074;
   overflow: hidden;

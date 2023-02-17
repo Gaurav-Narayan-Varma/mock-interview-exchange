@@ -19,9 +19,6 @@ export const JobSeekerProfilePosts1 = ({}) => {
     <ProfilePosts>
       <Group>
         <FernRectangle>
-          <Settings>Edit</Settings>
-          <Text1>Profile</Text1>
-          <Logout>Messages</Logout>
         </FernRectangle>
         <ButtonPrimary2
           onClick={(e) => ButtonPrimary2Function(e, "ButtonPrimary2")}

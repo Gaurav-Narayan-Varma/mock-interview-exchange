@@ -8,13 +8,6 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, query, where, doc, setDoc, getDocs, collection, addDoc } from "firebase/firestore";
 import 'firebase/firestore';
 
-let mockCards = []
-let mockNames = []
-let mockDates = []
-let cards2 = []
-let names2 = []
-let cards3 = []
-let names3 = []
 
 // initializing firebase
 const firebaseConfig = {
@@ -70,6 +63,14 @@ queryPPHSnapshot.forEach((doc) => {
 })
  
 export const Market1 = ({}) => {
+  
+let mockCards = []
+let mockNames = []
+let mockDates = []
+let cards2 = []
+let names2 = []
+let cards3 = []
+let names3 = []
   
   const navigate = useNavigate();
 
@@ -158,13 +159,25 @@ export const Market1 = ({}) => {
     navigate("/Search1");
 
   };
+  const ButtonProfile = (e, name) => {
+    navigate("/ProfilePosts1");
+  };
+  const ButtonFeedback = (e, name) => {
+    navigate("/BG1");
+  };
+  const ButtonTip = (e, name) => {
+    navigate("/Tip1");
+  };
+  const ButtonReview = (e, name) => {
+    navigate("/Rating1");
+  };
 
   return (
     <Market>
       <PageHeader>
-        <Back>My Profile (1)</Back>
+        <Back onClick={(e) => ButtonProfile(e, "ButtonPrimary")} >My Profile (1)</Back>
         <Text6>Market</Text6>
-        <Text7>Filter</Text7>
+        {/* <Text7 >Filter</Text7> */}
       </PageHeader>
       <BG>
         <Text5>Search</Text5>
@@ -173,34 +186,44 @@ export const Market1 = ({}) => {
       <Group  onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         {myMocks.length >= 3 ? myMocks : 'loading...'}
       </Group>
-      <Group1>
+      <Group1 >
         <Group7>
           {myNames.length >= 3 ? myNames[0] : 'loading...'}
           {myDates.length >= 3 ? myDates[0] : 'loading...'}
           <Group8>
-            <ButtonPrimary >
-              Starting (Host)
+            <ButtonPrimary  onClick={(e) => ButtonFeedback(e, "ButtonPrimary")}>
+              Feedback
             </ButtonPrimary>
           </Group8>
         </Group7>
-        <Group7>
+        <Group7 >
           {myNames.length >= 3 ? myNames[1] : 'loading...'}
           {myDates.length >= 3 ? myDates[0] : 'loading...'}
+          <Group8>
+            <ButtonPrimary  onClick={(e) => ButtonReview(e, "ButtonPrimary")} >
+              Review
+            </ButtonPrimary>
+          </Group8>
         </Group7>
-        <Group7>
+        <Group7 >
           {myNames.length >= 3 ? myNames[2] : 'loading...'}
           {myDates.length >= 3 ? myDates[0] : 'loading...'}
+          <Group8>
+            <ButtonPrimary  onClick={(e) => ButtonTip(e, "ButtonPrimary")} >
+              Tip
+            </ButtonPrimary>
+          </Group8>
         </Group7>
       </Group1>
       <Group2>
         <Text2>Technical Mock</Text2>
       </Group2>
-      <Group3>
+      <Group3  onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         {myNames2.length >= 3 ? myNames2[0] : 'loading...'}
         {myNames2.length >= 3 ? myNames2[1] : 'loading...'}
         {myNames2.length >= 3 ? myNames2[2] : 'loading...'}
       </Group3>
-      <Group4>
+      <Group4  onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         <Group7>
           {myCards2.length >= 3 ? myCards2[0] : 'loading...'}
         </Group7>
@@ -212,12 +235,12 @@ export const Market1 = ({}) => {
         </Group7>
       </Group4>
       <Text1>Behavioral Mock</Text1>
-      <Group5>
+      <Group5  onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         {myNames3.length >= 3 ? myNames3[0] : 'loading...'}
         {myNames3.length >= 3 ? myNames3[1] : 'loading...'}
         {myNames3.length >= 3 ? myNames3[2] : 'loading...'}
       </Group5>
-      <Group6>
+      <Group6  onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
         <Group7>
           {myCards3.length >= 3 ? myCards3[0] : 'loading...'}
         </Group7>

@@ -8,17 +8,17 @@ export const CalendarDrawer1 = ({}) => {
   
   const ButtonPrimary1Function = (e, name) => {      
       
-    navigate("/Calendar");
+    navigate("/JobSeekerProfilePosts1");
 
   };
   const ButtonPrimary3Function = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/ProfilePosts1");
   };
   const ButtonPrimary4Function = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/ProfilePosts1");
   };
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/ProfilePosts1");
   };
   return (
     <BG>
@@ -50,9 +50,6 @@ export const CalendarDrawer1 = ({}) => {
       >
         <ClickMe4>Decline</ClickMe4>
       </ButtonPrimary4>
-      <ButtonPrimary onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
-        <ClickMe>Close</ClickMe>
-      </ButtonPrimary>
     </BG>
   );
 };

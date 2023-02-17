@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
   Outlet
 } from "react-router-dom";
 
@@ -12,11 +11,10 @@ import "./global.css";
 
 
 import {AlreadyScheduled1} from "./screens/AlreadyScheduled1"
-import {BG1} from "./screens/BG1"
+import {BG1} from "./screens/Feedback1"
 import {CalendarDrawer1} from "./screens/CalendarDrawer"
 import {Calendar1} from "./screens/Calendar1"
 import {Calendly1} from "./screens/Calendly"
-import {EditProfilePosts1} from "./screens/EditProfilePosts1"
 import {Feed1} from "./screens/Feed1"
 import {Filter1} from "./screens/Filter1"
 import {InterviewConfirmed1} from "./screens/InterviewConfirmed1"
@@ -43,7 +41,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="CalendarDrawer1" element={<CalendarDrawer1 />} /> 
         <Route path="Calendar1" element={<Calendar1 />} /> 
         <Route path="Calendly1" element={<Calendly1 />} /> 
-        <Route path="EditProfilePosts1" element={<EditProfilePosts1 />} /> 
         <Route path="Feed1" element={<Feed1 />} /> 
         <Route path="Filter1" element={<Filter1 />} /> 
         <Route path="InterviewConfirmed1" element={<InterviewConfirmed1 />} /> 
@@ -71,27 +68,7 @@ function Layout() {
     
       <nav>
         
-      <Link to="Market1">Default</Link> 
-       
-      
-        <Link to="AlreadyScheduled1"> Coming UP </Link> 
-        <Link to="BG1"> Post-Iv </Link>
-        <Link to="CalendarDrawer1">Host View</Link>
-        <br />
-        <Link to="Calendar1">Calendar1</Link>
-        <Link to="Calendly1">Calendly1</Link>
-        <br />
-        <Link to="EditProfilePosts1">EditProfilePosts1</Link>
-
-        <Link to="JobSeekerProfilePosts1">JobSeekerProfilePosts1</Link>
-
-        <Link to="ProfilePosts1">ProfilePosts1</Link>
-        <br />
-        <Link to="Rating1">Rating1</Link>
-        <Link to="SearchMessages1">SearchMessages1</Link>
-        
-        <Link to="Tip1">Tip1</Link>
-
+   
          <Outlet />
          
       </nav>

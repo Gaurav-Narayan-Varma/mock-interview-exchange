@@ -7,15 +7,18 @@ export const Tip1 = ({}) => {
   
   const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/Market1")
+
   };
   return (
     <Tip>
       <BG>
         <Image1 src={`https://file.rendit.io/n/xGwztyhLJPVrPRWApxO3.png`} />
-        <Text1>Tip!</Text1>
+        <Text1>Tip! <br/></Text1>
+        <Header>We kindly request that you consider leaving a tip in Pi if you found the experience valuable <br/>  <br/></Header>
+
         <BG1>
-          <Search>Enter in amount</Search>
+          <Search><input placeholder="Enter in amount" /></Search>
         </BG1>
         <ButtonPrimary
           onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
@@ -26,6 +29,16 @@ export const Tip1 = ({}) => {
     </Tip>
   );
 };
+
+const Header = styled.div`
+display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;  font-size: 16px;
+  font-weight: 600;
+  box-sizing: border-box;  
+`;
+
 
 const Tip = styled.div`
   display: flex;

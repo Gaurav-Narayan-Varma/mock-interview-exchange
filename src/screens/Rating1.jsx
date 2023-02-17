@@ -7,7 +7,7 @@ export const Rating1 = ({}) => {
   
   const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/Market1")
   };
   return (
     <Rating>

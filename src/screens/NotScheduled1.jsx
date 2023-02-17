@@ -14,7 +14,6 @@ export const NotScheduled1 = ({}) => {
   };
   return (
     <NotScheduled>
-      <Text1>Overview</Text1>
       <ImageBlock>
         <Ellipse src={`https://file.rendit.io/n/WKmnk9ZgncB3SQFwW2Qz.png`} />
       </ImageBlock>
@@ -29,13 +28,13 @@ export const NotScheduled1 = ({}) => {
           <ILoveIt>Profile/History</ILoveIt>
         </ButtonPrimary>
       </Group>
-      <Paragraph1>
-        Worked at Google for a decade ...
+      <Paragraph>
+        Worked at Google and Youtube
         <br />
         <br />
         Can do technical interviews
-      </Paragraph1>
-      <Paragraph>
+        <br />
+        <br />
         When you click ‘Find a time!’ it will take you to their Calendly, find a
         time and then when you come back to this app, enter in the time you
         scheduled

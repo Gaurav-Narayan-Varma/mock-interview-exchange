@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const Calendar1 = ({}) => {
   const navigate = useNavigate();
   const ButtonPrimaryFunction = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/ProfilePosts1")
   };
   return (
     <Calendar>

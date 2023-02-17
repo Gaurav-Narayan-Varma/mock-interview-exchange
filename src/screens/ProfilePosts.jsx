@@ -5,31 +5,22 @@ import { useNavigate } from "react-router-dom";
 import { redirect } from "react-router-dom";
 
 
-
 export const ProfilePosts1 = ({}) => {
-
     const navigate = useNavigate();
 
-
-
   const ButtonPrimary2Function = (e, name) => {
-    alert(`${name} was clicked`);
+    navigate("/Calendar1");
   };
   const ButtonPrimaryFunction = (e, name) => {
-          navigate("/Calendar");
+    navigate("/Calendly1");
 
-    
-
-  };
-  const ButtonPrimary1Function = (e, name) => {
-    alert(`${name} was clicked`);
-  };
+  };  
+  const ButtonWantsYou = (e, name) => {
+    navigate("/CalendarDrawer1");
+  }
   return (
     <ProfilePosts>
       <FernRectangle>
-        <Settings>Edit</Settings>
-        <Text1>Profile</Text1>
-        <Logout>Messages</Logout>
       </FernRectangle>
       <Ellipse src={`https://media.licdn.com/dms/image/C4E03AQHkt6jZ5A6fWQ/profile-displayphoto-shrink_400_400/0/1604676461434?e=1681948800&v=beta&t=TRFG_U2cT2VjM3ChHt3r7hNfG_OKk3aR07OYi4uuEUo`} />
       <Group1>
@@ -46,10 +37,10 @@ export const ProfilePosts1 = ({}) => {
       </Group1>
       <Text2>Peter Pierre</Text2>
 
-      <Text3>Ex-IBM, 10+ YOE</Text3>
+      <Text3>Ex-IBM, 10+ YouTube</Text3>
       <Text5>Your mocks:</Text5>
 
-      <Group>
+      <Group onClick={(e) => ButtonWantsYou(e, "ButtonPrimary2")}>
         <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4D03AQFjCosFi0uoOA/profile-displayphoto-shrink_400_400/0/1618882572479?e=1681948800&v=beta&t=s7Y6k96xzkX1KSJpxgva0uzjnQB3T3b97ACQnsZP9gk"></img></ContentBlock>
         <Group4>
           <Group5>
@@ -60,7 +51,7 @@ export const ProfilePosts1 = ({}) => {
         </Group4>
       </Group>
       <DividerLine />
-      <Group>
+      <Group onClick={(e) => ButtonWantsYou(e, "ButtonPrimary2")}>
       <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4E03AQFbBv4KvvZLyQ/profile-displayphoto-shrink_400_400/0/1517740860047?e=1681948800&v=beta&t=7B3kfLl7L3DEGZsspk4rHzgAvwMt813GIH_jNPN1dQE"></img></ContentBlock>
         <Group4>
           <Group5>
@@ -71,7 +62,7 @@ export const ProfilePosts1 = ({}) => {
         </Group4>
       </Group>
       <DividerLine1 />
-      <Group2>
+      <Group2 onClick={(e) => ButtonWantsYou(e, "ButtonPrimary2")}>
       <ContentBlock><img  width="50px" src="https://media.licdn.com/dms/image/D4D03AQGHVfas_1Gl1A/profile-displayphoto-shrink_400_400/0/1665579676179?e=1681948800&v=beta&t=sWVJsQp4PFTrWyWp1ajqBYwh6OilDzNwvEsMJnxCtYM"></img></ContentBlock>
         <Group4>
           <Group5>

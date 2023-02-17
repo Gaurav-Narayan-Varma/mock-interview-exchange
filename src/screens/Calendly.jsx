@@ -11,34 +11,19 @@ export const Calendly1 = ({}) => {
 
   };
 
-  
   return (
     <Calendly>
-      <Group>
-        <Element1 src={`https://file.rendit.io/n/RZcUyKOAQZzFS9w3o8MD.svg`} />
-        <Group1>
-          <MobileSignal
-            src={`https://file.rendit.io/n/MBfa08GdJA86HsHZZho9.svg`}
-          />
-        </Group1>
-        <Wifi src={`https://file.rendit.io/n/hAVjmuwJyzQHXTsmIzT9.svg`} />
-        <Element2>
-          <Image1 src={`https://file.rendit.io/n/wZ2e9pVdXqWjAXHcAATO.svg`} />
-        </Element2>
-        <CombinedShape
-          src={`https://file.rendit.io/n/jcoFK9vV2VOa8KqPkQP7.svg`}
-        />
-      </Group>
+     
       <BG>
         <Text1>Do Interviews!</Text1>
         <BG1>
-          <input value="Enter in your Calendly" />
+          <input placeholder="Enter in your Calendly" />
         </BG1>
         <BG1>
-            <input value="Enter in your Zoom call link" />
+            <input placeholder="Enter in your Zoom call link" />
         </BG1>
         <BG1>
-            <input value="Propositioned Tip in Pi Coin" />
+            <input placeholder="Propositioned Tip in Pi Coin" />
         </BG1>
         <Group2>
           <RadioOptionHere>Technical</RadioOptionHere>

@@ -175,7 +175,7 @@ let names3 = []
   return (
     <Market>
       <PageHeader>
-        <Back onClick={(e) => ButtonProfile(e, "ButtonPrimary")} >My Profile (1)</Back>
+        <Back onClick={(e) => ButtonProfile(e, "ButtonPrimary")} >My Profile</Back>
         <Text6>Market</Text6>
         {/* <Text7 >Filter</Text7> */}
       </PageHeader>

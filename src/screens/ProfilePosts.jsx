@@ -18,17 +18,19 @@ export const ProfilePosts1 = ({}) => {
   const ButtonWantsYou = (e, name) => {
     navigate("/CalendarDrawer1");
   }
+  const ButtonProfile2 = (e, name) => {
+    navigate("/market1");
+  }
   return (
     <ProfilePosts>
+
       <FernRectangle>
+        <Back onClick={(e) => ButtonProfile2(e, "ButtonPrimary")} >Market</Back>
+
       </FernRectangle>
       <Ellipse src={`https://media.licdn.com/dms/image/C4E03AQHkt6jZ5A6fWQ/profile-displayphoto-shrink_400_400/0/1604676461434?e=1681948800&v=beta&t=TRFG_U2cT2VjM3ChHt3r7hNfG_OKk3aR07OYi4uuEUo`} />
       <Group1>
-        <ButtonPrimary2
-          onClick={(e) => ButtonPrimary2Function(e, "ButtonPrimary2")}
-        >
-          <SignUp>📅</SignUp>
-        </ButtonPrimary2>
+          <SignUp onClick={(e) => ButtonPrimary2Function(e, "ButtonPrimary2")}>📅</SignUp>
         <ButtonPrimary
           onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}
         >
@@ -77,6 +79,15 @@ export const ProfilePosts1 = ({}) => {
   );
 };
 
+const Back = styled.div`
+  align-self: flex-start;
+  margin: 8px 0px 9px 0px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+
+  box-sizing: border-box;
+`;
 const Group = styled.div`
   width: 98.28%;
   gap: 16px;

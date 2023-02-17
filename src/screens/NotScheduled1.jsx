@@ -7,19 +7,26 @@ export const NotScheduled1 = ({}) => {
   
   const navigate = useNavigate();
   const ButtonProfile = (e, name) => {
-    navigate("/ProfilePosts1")
+    navigate("/JobSeekerProfilePosts1")
   };
   const ButtonFindTime = (e, name) => {
-    navigate("/Calendly1")
+    navigate("/InterviewConfirmed1")
   };
+
+  const ButtonProfile2 = (e, name) => {
+    navigate("/Search1");
+  };
+
   return (
     <NotScheduled>
+      <Back onClick={(e) => ButtonProfile2(e, "ButtonPrimary")} >Technical Mocks</Back>
+
       <ImageBlock>
-        <Ellipse src={`https://file.rendit.io/n/WKmnk9ZgncB3SQFwW2Qz.png`} />
+        <Ellipse src={`https://media.licdn.com/dms/image/C4E03AQHrJEjMIVFI8g/profile-displayphoto-shrink_400_400/0/1606251858477?e=1681948800&v=beta&t=CbWztU4z24YLTb_6JwZZ9C52cBaqCHUw96g6JWRdrlE`} />
       </ImageBlock>
       <Group>
         <Group1>
-          <Text3>Victoria Vee</Text3>
+          <Text3>Christina Wiza</Text3>
           <Text2>Technical Interviewer</Text2>
         </Group1>
         <ButtonPrimary
@@ -47,6 +54,16 @@ export const NotScheduled1 = ({}) => {
     </NotScheduled>
   );
 };
+
+const Back = styled.div`
+  align-self: flex-start;
+  margin: 8px 0px 9px 0px;
+  color: #5db074;
+  font-size: 16px;
+  font-weight: 500;
+
+  box-sizing: border-box;
+`;
 
 const NotScheduled = styled.div`
   gap: 16px;
@@ -84,6 +101,7 @@ const Ellipse = styled.img`
   min-height: 0px;
   align-self: flex-end;
   box-sizing: border-box;
+  
 `;
 const Group = styled.div`
   width: 96.5%;

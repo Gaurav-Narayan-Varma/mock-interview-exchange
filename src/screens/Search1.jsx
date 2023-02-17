@@ -24,7 +24,7 @@ export const Search1 = ({}) => {
     <Search>
       <PageHeader>
         <Text3 onClick={(e) => ButtonBack(e, "ButtonPrimary")}>Back</Text3>
-        <Text2>Directory</Text2>
+        <Text2>Technical Mocks</Text2>
         <Text1 onClick={(e) => ButtonFilter(e, "ButtonPrimary")}>Filter</Text1>
       </PageHeader>
       <BG>
@@ -32,10 +32,10 @@ export const Search1 = ({}) => {
       </BG>
       <Text5>Your mocks:</Text5>
       <Group onClick={(e) => ButtonProfile(e, "ButtonPrimary")}>
-        <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4D03AQFjCosFi0uoOA/profile-displayphoto-shrink_400_400/0/1618882572479?e=1681948800&v=beta&t=s7Y6k96xzkX1KSJpxgva0uzjnQB3T3b97ACQnsZP9gk"></img></ContentBlock>
+        <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4E03AQHrJEjMIVFI8g/profile-displayphoto-shrink_400_400/0/1606251858477?e=1681948800&v=beta&t=CbWztU4z24YLTb_6JwZZ9C52cBaqCHUw96g6JWRdrlE"></img></ContentBlock>
         <Group4>
           <Group5>
-            <Header>Edgardo Adam</Header>
+            <Header>Christina Wiza</Header>
             <Text6>March 3, 6:00PM</Text6>
           </Group5>
           <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
@@ -43,10 +43,10 @@ export const Search1 = ({}) => {
       </Group>
       <DividerLine />
       <Group1 onClick={(e) => ButtonProfile(e, "ButtonPrimary")}>
-      <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4E03AQFbBv4KvvZLyQ/profile-displayphoto-shrink_400_400/0/1517740860047?e=1681948800&v=beta&t=7B3kfLl7L3DEGZsspk4rHzgAvwMt813GIH_jNPN1dQE"></img></ContentBlock>
+      <ContentBlock><img width="50px" src="https://media.licdn.com/dms/image/C4E03AQGzdDCxZFDtUA/profile-displayphoto-shrink_400_400/0/1609928845772?e=1681948800&v=beta&t=3gRJgWEtvpNC0xHdScV04dZt7uiBRpgK5NpiZVz4KEo"></img></ContentBlock>
         <Group4>
           <Group5>
-            <Header>Ruth Goyette</Header>
+            <Header>Judy Boehm</Header>
             <Text6>March 3, 6:00PM</Text6>
           </Group5>
           <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
@@ -54,10 +54,10 @@ export const Search1 = ({}) => {
       </Group1>
       <DividerLine1 />
       <Group2 onClick={(e) => ButtonProfile(e, "ButtonPrimary")}>
-      <ContentBlock><img  width="50px" src="https://media.licdn.com/dms/image/D4D03AQGHVfas_1Gl1A/profile-displayphoto-shrink_400_400/0/1665579676179?e=1681948800&v=beta&t=sWVJsQp4PFTrWyWp1ajqBYwh6OilDzNwvEsMJnxCtYM"></img></ContentBlock>
+      <ContentBlock><img  width="50px" src="https://media.licdn.com/dms/image/C5603AQFzXyyUuYKUrg/profile-displayphoto-shrink_400_400/0/1642657481130?e=1681948800&v=beta&t=aPyQOWv_NPfGobT3VvxWH-mkrrtXprv__Tb9PbrA0kQ"></img></ContentBlock>
         <Group4>
           <Group5>
-            <Header>Lorna Fahey</Header>
+            <Header>Hillard Cormier</Header>
             <Text6>March 3, 6:00PM</Text6>
           </Group5>
           <Text9>zoom.us/j/5137704736?pwd=Y0Y5REZoaWk5bllDSk1NYUxWcUlTdz09</Text9>
@@ -100,7 +100,7 @@ const Text3 = styled.div`
 `;
 const Text2 = styled.div`
   align-self: flex-start;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 600;
 
   text-align: center;

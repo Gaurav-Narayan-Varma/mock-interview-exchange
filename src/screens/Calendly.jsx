@@ -7,7 +7,7 @@ export const Calendly1 = ({}) => {
   const navigate = useNavigate();
 
   const ButtonPrimaryFunction = (e, name) => {
-     navigate("/InterviewConfirmed1");
+     navigate("/ProfilePosts1");
 
   };
 

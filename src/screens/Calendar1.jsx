@@ -13,7 +13,9 @@ export const Calendar1 = ({}) => {
         <Text42>Mo</Text42>
         <Text43>Tu</Text43>
         <Group4>
-          <Text49>March</Text49>
+          <Text49>Your Schedule</Text49>
+          <Text49>February</Text49>
+
           <Group5>
             <Text44>We</Text44>
             <Text45>Th</Text45>
@@ -71,26 +73,9 @@ export const Calendar1 = ({}) => {
         <Text8>31</Text8>
         <Text7>1</Text7>
       </CalendarRow3>
-      <Group1>
-        <Icon src={`https://file.rendit.io/n/p5e0r95fUcwXoKfknyfc.svg`} />
-        <Text6>Item</Text6>
-        <Text5>30min.</Text5>
-      </Group1>
-      <Divider />
-      <Group2>
-        <Icon1 src={`https://file.rendit.io/n/p5e0r95fUcwXoKfknyfc.svg`} />
-        <Text4>Item</Text4>
-        <Text3>60min.</Text3>
-      </Group2>
-      <Divider1 />
-      <Group3>
-        <Icon2 src={`https://file.rendit.io/n/p5e0r95fUcwXoKfknyfc.svg`} />
-        <Text2>Item</Text2>
-        <Text1>30min.</Text1>
-      </Group3>
       <Divider2 />
       <ButtonPrimary onClick={(e) => ButtonPrimaryFunction(e, "ButtonPrimary")}>
-        <ILoveIt>Ready to learn!</ILoveIt>
+        <ILoveIt>Back to Calendar</ILoveIt>
       </ButtonPrimary>
     </Calendar>
   );
@@ -138,7 +123,7 @@ const Text43 = styled.div`
 `;
 const Group4 = styled.div`
   width: 33.03%;
-  gap: 76px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -149,6 +134,15 @@ const Text49 = styled.div`
   align-self: flex-end;
   color: #ffffff;
   font-size: 30px;
+  font-weight: 600;
+
+  text-align: center;
+  box-sizing: border-box;
+`;
+const Text79 = styled.div`
+  align-self: flex-end;
+  color: #ffffff;
+  font-size: 15px;
   font-weight: 600;
 
   text-align: center;

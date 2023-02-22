@@ -1,6 +1,6 @@
 ### Mock Interview App
 
-Introduction:
+### Introduction:
 Welcome to Mock interview exchange, the revolutionary platform that helps users improve their coding skills and prepare for job interviews. With Mock interview exchange, users can connect with top-rated interview hosts for free and receive expert guidance that boosts their confidence and increases their chances of success. Mock interview exchange also offers the option to tip hosts with Pie, a user-friendly and inclusive cryptocurrency. Mock Interview Exchange has a distinct advantage over other interview platforms in that it is inclusive, built on Pi, and completely free. This is in contrast to spending hundreds of dollars on mock interviews on other platforms.
 
 User Journey as User Looking for Mock Interviewer:
